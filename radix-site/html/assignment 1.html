@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="html.css">
+    <title>Home Page</title>
+ 
+
+</head>
+
+<body>
+    <section>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="radix.png" alt="" id="logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="./Html.html">Html</a></li>
+                    <li><a href="../css/CSS.html">Css</a></li>
+                    <li><a href="#">Bootstrap</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">JQuery</a></li>
+                    <li><a href="#">Mini Project</a></li>
+                    <li><a href="#">Sql</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="container">
+       <div class="left">
+        <ul>
+            <li> Day 3
+                <ul>
+                    <li> Assignment 1
+                        <ul>
+                            <li>
+                                <a href="./assignment 1.html">Assignment 1</a> 
+                            </li>
+                            <li>
+                                <a href="./assignment 2.html">Assignment 2</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Practice
+                        <ul>
+                            <li><a href="./practice 1.html">Practice 1</a> </li>
+                            <li><a href="./practice 2.html">Practice 2</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+       </div>
+       <div class="right">
+        <div class="home-right">
+            
+            <form onsubmit="">
+                <p id="name">Add Employee Form</p>
+                <div>
+                    profile photo:<br><br>
+                    <input type="file" name="profile" accept=".jpg">
+                   <br/> 
+                <br/>
+                First Name:<br>
+                <input type="text" name="Name " placeholder="jone sina" required/><br>
+                <br/> 
+                <br/>
+                last Name:<br>
+                <input type="text" name="last" required/>
+                <br/> 
+                <br/>
+                Job Profile :<br>
+                <select name="contry" required>
+                    <option value="software developer">software developer</option>
+                    <option value="full-stack developer">full-stack developer</option>
+                    <option value="front-end developer">front-end developer</option>
+                    <option value="back-end">back-end</option>
+                    </select>
+                    <br/> 
+                    
+                <br/>
+                Gender: <br>
+                male <input type="radio" name="sex" required > Female <input type="radio" name="sex" required> Other <input type="radio" name="sex" required>
+                <br/> 
+                <br/>
+                Date Of Joining : <br>
+                <input type="date" name="dob" min="1991-01-01" max="2004-12-31" required required/>
+                <br/> 
+                <br/>
+                Salary:<br>
+                <input type="tel" min="10" max="10" required pattern="^(?=.*[0-9]).{10,10}$"/>
+                <br/> 
+                <br/>
+                Country :<br>
+            <select name="contry" required>
+                <option value="india">india</option>
+                <option value="nepal">nepal</option>
+                <option value="shriLanka">shriLanka</option>
+                <option value="japan">japan</option>
+                </select>
+                <br/> 
+                <br/>
+                mobile no:<br>
+                <input type="tel" min="10" max="10" required pattern="^(?=.*[0-9]).{10,10}$"/>
+                <br/> 
+                <br/>
+        
+                Email :<br>
+                <input type="email" name="email" multiple  />
+                <br/> 
+                <br/>
+                Password : <br>
+                <input type="password" name="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$"  required/>
+                <br/> 
+                <br/> 
+                <input type="submit" name="submit"/>
+                <input type="reset">
+                
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+
