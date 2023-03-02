@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .navitem {
+          @apply md:mx-5 p-2 hover:scale-110 transition duration-500 hover:text-blue-500 ;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="
+      bg-[url('https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')]
+      h-screen
+      bg-cover
+    "
+  >
+    <div
+      class="
+        flex
+        justify-between
+        item-center
+        border-2 border-blue-300
+        text-white text-xl
+        p-1
+      "
+    >
+      <div class="logo">
+        <img
+          class="rounded-full hover:border-2 hover:border-red-900 w-14"
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+
+      <div class="hidden md:block">
+        <nav>
+          <ul class="md:flex">
+            <li class="navitem">
+              <a class="hover:text-blue-500" href="">Home</a>
+            </li>
+            <li class="navitem">Latest Anime</li>
+            <li class="navitem">Watch Live</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hidden p-2 md:block">
+        <button class="border-2 border-gary-100 rounded-md flex">
+          <svg
+            class="h-5 w-5 text-gray-600"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <circle cx="10" cy="10" r="7" />
+            <line x1="21" y1="21" x2="15" y2="15" />
+          </svg>
+          <input type="text" class="search" placeholder="" />
+        </button>
+      </div>
+      <div class="flex iten-center md:hidden">
+        <div class="">
+          <button class="border-2 border-gary-100 rounded-md px-2 m-1">
+            <svg
+              class="h-5 w-5 text-gray-600"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </button>
+        </div>
+        <svg
+          class="h-8 w-8 text-gray-900"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="text-white">
+      <h1 class="text-5xl md:text-9xl md:m-20 md:my-52">
+        Welcome To Macdonald
+      </h1>
+    </div>
+    <div class="bg-gray-300 opacity-90 flex flex-wrap w-screen p-1">
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105 hover:scale-109
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/7bb739d7f6ae8b4ce8ed590765dffd2f"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+           
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105 hover:scale-109
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://b.zmtcdn.com/data/pictures/3/19612153/9bfb3bf99cc6356dc4f8ca8c138bc128.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105 hover:scale-109
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://www.shutterstock.com/image-photo/moscow-russiaoctober-6-2014-mcdonalds-260nw-243788887.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/7bb739d7f6ae8b4ce8ed590765dffd2f"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://b.zmtcdn.com/data/pictures/3/19612153/9bfb3bf99cc6356dc4f8ca8c138bc128.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://www.shutterstock.com/image-photo/moscow-russiaoctober-6-2014-mcdonalds-260nw-243788887.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/7bb739d7f6ae8b4ce8ed590765dffd2f"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://b.zmtcdn.com/data/pictures/3/19612153/9bfb3bf99cc6356dc4f8ca8c138bc128.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://www.shutterstock.com/image-photo/moscow-russiaoctober-6-2014-mcdonalds-260nw-243788887.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/7bb739d7f6ae8b4ce8ed590765dffd2f"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://b.zmtcdn.com/data/pictures/3/19612153/9bfb3bf99cc6356dc4f8ca8c138bc128.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="
+          m-1
+          md:my-3
+          border-2 border-gray-500
+          w-full
+          overflow-hidden
+          sm:flex sm:w-2/3 sm:h-57
+          bg-gray-100
+          rounded-lg
+          shadow-xl
+          md:block md:w-2/5 md:m-auto
+          lg:w-96 lg:mx-10
+          hover:scale-105
+        "
+      >
+        <div class="w-full">
+          <img
+            class="w-full h-64"
+            src="https://www.shutterstock.com/image-photo/moscow-russiaoctober-6-2014-mcdonalds-260nw-243788887.jpg"
+            alt=""
+            class="w-full"
+          />
+        </div>
+        <div class="p-1">
+          <h1 class="text-lg font-semibold text-center my-1">ITEM NAME</h1>
+          <p class="text-md text-gray-600 my-1">
+            About the demo text agiin the demo text agiin the demo text agiin
+            xdfgbxgn
+          </p>
+
+          <div class="flex justify-between">
+            <p class="text-lg font-semibold my-1">
+              $20
+              <span class="line-through text-base text-red-400">$25</span>
+            </p>
+            <p class="text-md my-1 text-green-400">20% off</p>
+          </div>
+          <div class="text-center my-5">
+            <button
+              class="text-lg bg-green-500 p-2 rounded-lg px-10 hover:scale-105"
+            >
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gary-900 text-white text-center text-3xl py-6 bg-black">
+      <p><strong>@2023 McDonald's Copyright</strong></p>
+    </div>
+  </body>
+</html>
