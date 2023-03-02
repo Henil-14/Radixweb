@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+
+<!-- video 26 -->
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+`   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+</script>
+    <style>
+        .row-hl{
+            background: #f4f4f4;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <!--------RESPONSIVE GRID--------->
+    <div class="row">
+        <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333">
+            <ul>
+                <li>6 column on small screens</li>
+                <li>8 column in medium screen</li>
+                <li>9 column on large screen</li>
+                <li>10 column on large screen</li>
+            </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border:1px solid #333">
+            <ul>
+                <li>6 column on small screens</li>
+                <li>8 column in medium screen</li>
+                <li>3 column on large screen</li>
+                <li>2 column on large screen</li>
+            </ul>
+        </div>
+    </div>
+<br>
+<br>
+    <!--------EQUAl GRID--------->
+    <div class="row">
+        <div class="col" style="border:1px solid #333">Equal width</div>
+        <div class="col" style="border:1px solid #333">Equal width</div>
+        <div class="col" style="border:1px solid #333">Equal width</div>
+        <div class="col" style="border:1px solid #333">Equal width</div>
+    </div>
+    <br>
+    <br>
+    <!--------EQUAl WITH MULTI ROW--------->
+
+    <div class="row">
+        <div class="col" style="border:1px solid #333">Equal width Multi</div>
+        <div class="col" style="border:1px solid #333">Equal width Multi</div>
+        <div class="w-100"></div>
+        <div class="col" style="border:1px solid #333">Equal width Multi</div>
+        <div class="col" style="border:1px solid #333">Equal width Multi</div>
+    </div>
+    <br>
+    <br>
+    <!--------AUTO LAYOUT--------->
+    <div class="row">
+        <div class="col" style="border:1px solid #333">Auto layout</div>
+        <div class="co-6" style="border:1px solid #333">Auto layout</div>
+        <div class="col-4" style="border:1px solid #333">Auto layout</div>
+    </div>
+    <br>
+    <br>
+    <!--------EQUAl WIDTH STACKED--------->
+
+    <div class="row">
+        <div class="col-sm" style="border:1px solid #333">Auto layout</div>
+        <div class="col-sm" style="border:1px solid #333">Auto layout</div>
+        <div class="col-sm" style="border:1px solid #333">Auto layout</div>
+    </div>
+    <br>
+    <br>
+    <!--------ORDERING--------->
+
+    <div class="row">
+        <div class="col order-3" style="border:1px solid #333">First</div>
+        <div class="col order-2" style="border:1px solid #333">Second</div>
+        <div class="col oredr-1" style="border:1px solid #333">Third</div>
+    </div>
+    <br>
+    <br>
+    <!-------OFFSETTING--------->
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4" style="border:1px solid #333">4 col</div>
+        <div class="col-md-4 ml-auto" style="border:1px solid #333">4 col offset 4</div>
+    </div>
+    <div>
+        <div class="col-md-3 ml-auto" style="border:1px solid #333">3 offset 3</div>
+        <div class="col-md-3 ml-auto" style="border:1px solid #333">3 offset 3</div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 m-auto" style="border:1px solid #333">6 col offset 3</div>
+       
+    </div>
+    <br>
+    <br>
+    <!-------NESTING--------->
+    <div class="row">
+        <div class="col-sm-9" style="border:1px solid #333">lEVEL 1: .col-sm-9</div>
+        <div class="col-sm-6" style="border:1px solid #333">lEVEL 2: .col-8 .col-sm-6</div>
+        <div class="col-sm-6" style="border:1px solid #333">lEVEL 3: .col-4 .col-sm-6</div>
+    </div>
+    <br>
+    <br>
+
+<!-- video 26 -->
+
+    <!-------VERTICAL ALIGNMENT--------->
+    <div class="container">
+        <div class="row align-item-start" style="height: 200px;border:1px #333 solid">
+            <div class="col">
+                Top Aligned Text
+            </div>
+            <div class="col">
+                Top Aligned Text
+            </div>
+            <div class="col">
+                Top Aligned Text
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-item-center" style="height: 200px;border:1px #333 solid">
+            <div class="col">
+                Middle Aligned Text
+            </div>
+            <div class="col">
+                Middle Aligned Text
+            </div>
+            <div class="col">
+                Middle Aligned Text
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-item-end" style="height: 200px;border:1px #333 solid">
+            <div class="col">
+                Bottom Aligned Text
+            </div>
+            <div class="col">
+                Bottom Aligned Text
+            </div>
+            <div class="col">
+                Bottom Aligned Text
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-------VERTICAL ALIGN INDIVIDUAL COLS--------->
+
+    <div class="container">
+        <div class="row align-item-end" style="height: 200px;border:1px #333 solid">
+            <div class="col align-self-start">
+                Top Aligned Text
+            </div>
+            <div class="col align-self-center">
+                Middle Aligned Text
+            </div>
+            <div class="col align-self-end">
+                Bottom Aligned Text
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-------HORIZONTAL ALIGNED COLS--------->
+
+    
+    
+ <div class="container">
+    <div class="row justify-content-start" style="height: 200px;border:1px #333 solid">
+        <div class="col-4">
+           Left Aligned Text
+        </div>
+        <div class="col-4">
+           Left Aligned Text
+        </div>
+    </div>
+ </div>
+
+ <div class="container">
+    <div class="row justify-content-center" style="height: 200px;border:1px #333 solid">
+        <div class="col-4">
+           Center Aligned Text
+        </div>
+        <div class="col-4">
+           Center Aligned Text
+        </div>
+    </div>
+ </div> 
+
+ <div class="container">
+    <div class="row justify-content-end" style="height: 200px;border:1px #333 solid">
+        <div class="col-4">
+           Right Aligned Text
+        </div>
+        <div class="col-4">
+           Right Aligned Text
+        </div>
+    </div>
+ </div>
+
+ <div class="container">
+    <div class="row justify-content-around" style="height: 200px;border:1px #333 solid">
+        <div class="col-4">
+           Content Around
+        </div>
+        <div class="col-4">
+            Content Around
+        </div>
+    </div>
+ </div>
+
+ <div class="container">
+    <div class="row justify-content-between" style="height: 200px;border:1px #333 solid">
+        <div class="col-4">
+           Content Between
+        </div>
+        <div class="col-4">
+            Content Between
+        </div>
+    </div>
+ </div>
+ <br>
+ <br>
+        <!-------COLUMN WRAPPING & NO GUTTERS--------->
+    <div class="row no-gutters">
+        <div class="col-9">
+            <div class="card">
+                <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                    debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                    rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                    et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                    non internos sint est dolores vitae. 
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                    debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                    rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                    et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                    non internos sint est dolores vitae. 
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                    debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                    rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                    et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                    non internos sint est dolores vitae. 
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--------------FLEX ROW AND ITEMS------------------->
+
+    <div class="d-flex flex-row row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+    <br>
+    <br>
+    <!--------------FLEX BOX REVERSE------------------->
+
+    <div class="d-flex flex-row-reverse row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+    <br>
+    <br>
+
+    <!--------------JUSTIFY CONTENT------------------->
+
+    <div class="d-flex flex-row justify-content-start row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-end row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-around row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+
+    <div class="d-flex flex-row justify-content-between row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+    <br>
+    <br>
+    <!--------------FLEX CONTAINER? FLEX COLUMN------------------->
+
+    <div class="d-flex flex-column row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+
+    <div class="d-flex flex-column-reverse row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+    <br>
+    <br>
+    <!--------------VERTICAL ALIGN ITEMS------------------->
+
+
+    <div class="d-flex flex-row align-items-start row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+    <br>
+    <br>
+    <!--------------VERTICAL ALIGN ITEMS------------------->
+
+    <div class="d-flex flex-row align-items-center row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+
+    <div class="d-flex flex-row align-items-end row-hl">
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+        <div class="p-4 item-hl">Flex Item</div>
+    </div>
+    <br>
+    <br>
+<!--------------VERTICAL ALIGN ITEMS------------------->
+
+
+<div class="d-flex flex-row align-items-baselinie row-hl">
+    <div class="p-4 item-hl">Flex Item</div>
+    <div class="p-4 item-hl">Flex Item</div>
+    <div class="p-4 item-hl">Flex Item</div>
+</div>
+<br>
+<br>
+<!--------------VERTICAL ALIGN ITEMS------------------->
+
+
+<div class="d-flex flex-row align-items-stretch row-hl">
+    <div class="p-4 item-hl">Flex Item</div>
+    <div class="p-4 item-hl">Flex Item</div>
+    <div class="p-4 item-hl">Flex Item</div>
+</div>
+<br>
+<br>
+<!-------------- ALIGN SELF------------------->
+
+<div class="d-flex flex-row  row-hl">
+    <div class="p-4 align-self-start item-hl">Flex Item</div>
+    <div class="p-4 align-self-center item-hl">Flex Item</div>
+    <div class="p-4 align-self-end item-hl">Flex Item</div>
+    <div class="p-4 align-self-baseline item-hl">Flex Item</div>
+    <div class="p-4 align-self-stretch item-hl">Flex Item</div>
+</div>
+
+<br>
+<br>
+<!--------------RESPONSIVE ALIGN SELF------------------->
+
+<div class="d-flex flex-row  row-hl">
+    <div class="p-4 align-self-md-start item-hl">Flex Item</div>
+    <div class="p-4 align-self-md-center item-hl">Flex Item</div>
+    <div class="p-4 align-self-md-end item-hl">Flex Item</div>
+    <div class="p-4 align-self-md-baseline item-hl">Flex Item</div>
+    <div class="p-4 align-self-md-stretch item-hl">Flex Item</div>
+</div>
+
+<br>
+<br>
+<!--------------MR-AUTo------------------->
+
+<div class="d-flex flex-column row-hl">
+    <div class="mr-auto p-4 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+</div>
+<br>
+<br>
+<!--------------ML-AUTo------------------->
+
+<div class="d-flex flext-column row-hl">
+    <div class="mr-auto p-4 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="mt-auto p-2 item-hl">Flex Item</div>
+</div>
+<br>
+<br>
+<!--------------ML-AUTo------------------->
+
+<div class="d-flex  row-hl">
+    <div class="mr-auto p-4 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+</div>
+<br>
+<br>
+<!--------------NO-WRAP------------------->
+<div class="d-flex flex-norwap row-hl">
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+
+</div>
+<br>
+<br>
+<!--------------WRAP------------------->
+<div class="d-flex flex-warap row-hl">
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+    <div class="p-2 item-hl">Flex Item</div>
+
+</div>
+<br>
+<br>
+<!-------------ORDERING------------------>
+
+<div class="d-flex row-hl">
+    <div class="order-3 p-2 item-hl">FIRST Flex Item</div>
+    <div class="order-2 p-2 item-hl">SECOND Flex Item</div>
+    <div class="order-1 p-2 item-hl">THIRD Flex Item</div>
+
+</div>
+<br><br>
+
+<br>
+<br>
+<!-------------CAROUSEL SLIDER------------------>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8  m-auto">
+            <br>
+            <br>
+    <!------------SIMPLE SLIDER------------------>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image1-4297dc5dcf.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image2-dc3d866a26.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image3-ee8e5f9dd9.jpg" alt="Third slide">
+          </div>
+        </div>
+      </div>
+      <br>
+<br>  
+            
+<!------------SLIDER WITH CONTROLS------------------>
+            
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image1-4297dc5dcf.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image2-dc3d866a26.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image3-ee8e5f9dd9.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image1-4297dc5dcf.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image2-dc3d866a26.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://www.alstrongindia.com/cache/widgetkit/gallery/39/image3-ee8e5f9dd9.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<br>
+<br>
+
+<!------------BUTTON WITH COLLAPSE------------------>
+   
+<p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Button with data-target
+    </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-block">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+    </div>
+  </div>
+  
+<br>
+<br>
+
+<!------------TOOLTIPS------------------>
+<button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on Top</button>
+<button class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on Right</button>
+<button class="btn btn-warning" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on Left</button>
+<button class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on Bottom</button>
+
+<!------------TOOLTIPS WITH HTML------------------>
+<button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="<h3> hellow world</h3><p>Anim pariatur cliche reprehenderit</p>">Tooltip on Top</button>
+
+<br>
+<br>
+<!------------TOOLTIPS WITH JS------------------>
+
+<button class="btn btn-primary" data-toggle="modal"
+data-target="#mymodal"
+>Launch Modal</button>
+<br>
+<br>
+<!------------MODAL TRIGGER------------------>
+
+        <div class="modal" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet. Vel ipsum repellendus aut dolorem 
+                    debitis sit ipsa saepe. Sed minus fuga sed soluta accusantium 
+                    rem quisquam molestiae. Vel ipsum assumenda quo eveniet officiis 
+                    et rerum recusandae quo porro fugiat eos iste necessitatibus 
+                    non internos sint est dolores vitae.
+                    </div>
+                    <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<br>
+<br>
+<!------------ LOGIN MODAL TRIGGER------------------>
+<button class="btn btn-info" data-toggle="modal"
+data-target="#loginmodal"
+>Login</button>
+<br>
+<br>
+<!------------ LOGIN MODAL ------------------>
+
+<div class="modal" id="loginmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <lable for="username">Username</lable>
+                        <input type="text" 
+                        placeholder="Username" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <lable for="password">Password</lable>
+                        <input type="password" 
+                        placeholder="Password" class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button class="btn btn-secondary" data-dismiss="modal">close</button>
+            <button class="btn btn-primary" data-dismiss="modal">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <script>
+    //Init tooltips
+
+    $('[data-toggle="tooltip"]').tooltip();
+  </script>
+
+
+
+  
+</body>
+
+</html>
+

@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head >
+  <title>Mx Player</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid ">
+        <img src="https://cdn-images-1.medium.com/max/658/1*iNEpDcRzLYWrlwU-gR3bWw@2x.png" alt="mxplayer" height="60" >
+        <form class="d-flex ">
+          <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+        
+        <a href="Login" class="text-light text-decoration-none"><h4>LOGIN</h4></a>
+      </div>
+    </nav>
+    <!-- Nav tabs -->
+    <ul class="nav navbar-expand-lg nav-tabs bg-dark d-flex justify-content-evenly" id="myTab" role="tablist ">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link " id="Home-tab" data-bs-toggle="tab" data-bs-target="#Home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="bi bi-house"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Show-tab" data-bs-toggle="tab" data-bs-target="#Shows" type="button" role="tab" aria-controls="Shows" aria-selected="true">Shows</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Movies-tab" data-bs-toggle="tab" data-bs-target="#Movies" type="button" role="tab" aria-controls="Movies" aria-selected="false">Movies</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Free-tab" data-bs-toggle="tab" data-bs-target="#Free" type="button" role="tab" aria-controls="Free" aria-selected="false">New&Free</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="MXGold-tab" data-bs-toggle="tab" data-bs-target="#MXGold" type="button" role="tab" aria-controls="MXGold" aria-selected="false">MX Gold</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="MXVDESI-tab" data-bs-toggle ="tab" data-bs-target="#MXVDESI" type="button" role="tab" aria-controls="MXVDESI" aria-selected="false">MX VDESI</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="Podcast-tab" data-bs-toggle="tab" data-bs-target="#Podcast" type="button" role="tab" aria-controls="Podcast" aria-selected="false">Podcast</button>
+      </li>
+    </ul>
+  </header>
+    
+    <!-- Tab panes -->
+    <div class="tab-content bg-dark text-light P-5">
+      <div class="tab-pane active" id="Home" role="tabpanel" aria-labelledby="Home-tab"> 
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner p-1 "  >
+            <div class="carousel-item active" data-bs-interval="10000">
+              
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQveODP1m40Z4wWqeAKwlYUBJyG20C9K8gJsqLaFOiLyQ&usqp=CAU&ec=48600112" class="d-block w-100" alt="Movie"  height="800">
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+              <img src="https://www.filmibeat.com/imgh/560x292/2023/01/pathaan_167342141160.jpg" class="d-block w-100" alt="Movie"  height="800">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHRPLacmrArTg9AKPWFbn8tAH3ZpMP47RhEzudv-0hA&usqp=CAU&ec=48600112" class="d-block w-100" alt="Movie"  height="800">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFRhMTWHlIXTP3ft-Rg1qF4qzgpPjJKJO-TNWNC-VFw&usqp=CAU&ec=48600112" class="d-block w-100" alt="Movie"  height="800">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Movie_poster_for_%22Scary_Movie%22.jpg" class="d-block w-100" alt="Movie"  height="800">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiiEjp01OCEW1hWoORE-XvUGE_h64qPE7zYnR4N8ufQQ&usqp=CAU&ec=48600112" class="d-block w-100" alt="Movie"  height="800">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         
+          <!--Movies-->
+          <div class="container-fluid">
+            <div class="row align-items-start ">
+              <h3 class="display-6"><strong>Trending Movies</strong><i class="bi bi-chevron-compact-right"></i></h3>
+              
+              <div class="col">
+                
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kbxcMc7cct2ucWWRtO5JugJZzWnZFaqG4A9QsKEJWX7NGwYpcFJmHfPvcwe9K7oswD8Q24t20ko&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUK4MVmjZSnpslETEUMMOvpNlydlKJ-8_SZoAT2Ipp2OTmtlsmSbQ7cgV-mLjfmYa1mcUlYNu4IpM&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI7cwm-J8quujZgOEcvZsGfxNWVEhnN0BWoDOf0f1zXA&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+                
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              <div class="col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+              </div>
+              
+              
+            </div>
+        </div>
+        <!--Shows-->
+        <div class="container-fluid">
+          <div class="row align-items-start ">
+            <h3 class="display-6"><strong>Shows</strong><i class="bi bi-chevron-compact-right"></i></h3>
+            
+            <div class="col">
+              
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kbxcMc7cct2ucWWRtO5JugJZzWnZFaqG4A9QsKEJWX7NGwYpcFJmHfPvcwe9K7oswD8Q24t20ko&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUK4MVmjZSnpslETEUMMOvpNlydlKJ-8_SZoAT2Ipp2OTmtlsmSbQ7cgV-mLjfmYa1mcUlYNu4IpM&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI7cwm-J8quujZgOEcvZsGfxNWVEhnN0BWoDOf0f1zXA&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+              
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            <div class="col">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+            </div>
+            
+            
+          </div>
+      </div>
+      <!--MX original web series-->
+      <div class="container-fluid">
+        <div class="row align-items-start ">
+          <h3 class="display-6"><strong>MX original web series</strong><i class="bi bi-chevron-compact-right"></i></h3>
+          
+          <div class="col">
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kbxcMc7cct2ucWWRtO5JugJZzWnZFaqG4A9QsKEJWX7NGwYpcFJmHfPvcwe9K7oswD8Q24t20ko&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUK4MVmjZSnpslETEUMMOvpNlydlKJ-8_SZoAT2Ipp2OTmtlsmSbQ7cgV-mLjfmYa1mcUlYNu4IpM&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI7cwm-J8quujZgOEcvZsGfxNWVEhnN0BWoDOf0f1zXA&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+            
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          <div class="col">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+          </div>
+          
+          
+        </div>
+    </div>
+    <!--Top 10-->
+    <div class="container-fluid">
+      <div class="row align-items-start ">
+        <h3 class="display-6"><strong>Top ten this week</strong><i class="bi bi-chevron-compact-right"></i></h3>
+        
+        <div class="col">
+          
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kbxcMc7cct2ucWWRtO5JugJZzWnZFaqG4A9QsKEJWX7NGwYpcFJmHfPvcwe9K7oswD8Q24t20ko&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhK0gWU3RLcsG4WpL7_wBjlxS6zHstS0ajsNjfw95qw&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUK4MVmjZSnpslETEUMMOvpNlydlKJ-8_SZoAT2Ipp2OTmtlsmSbQ7cgV-mLjfmYa1mcUlYNu4IpM&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK7jCoxfgh0ZirKeQtIGJ43pyFYZzpBlG7D6LnoVONVg&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        <div class="col">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_jPl95U8oyegqXiOLGm4o0sk1-eZqzEhMYgGwOfeIJQ&usqp=CAU&ec=48600112" alt="image" width="100">
+        </div>
+        
+      </div>
+  </div>
+      </div>
+     <!--  <div class="tab-pane" id="Shows" role="tabpanel" aria-labelledby="Shows-tab"> 
+        SHOW
+         </div>
+     <div class="tab-pane" id="Movies" role="tabpanel" aria-labelledby="Movies-tab"> Movies </div>
+      <div class="tab-pane" id="Free" role="tabpanel" aria-labelledby="Free-tab"> New&Free </div>
+      <div class="tab-pane" id="MXGold" role="tabpanel" aria-labelledby="MXGold-tab"> MX Gold </div>
+      <div class="tab-pane" id="MXVDESI" role="tabpanel" aria-labelledby="MXVDESI-tab"> MX VDESI </div>
+      <div class="tab-pane" id="Podcast" role="tabpanel" aria-labelledby="Podcast-tab"> Podcast </div>  -->
+    </div>
+  
+  <main>
+    
+  </main>
+  <footer>
+    <!-- place footer here -->
+    <section class="">
+      <!-- Footer -->
+      <footer class="bg-secondary text-white text-center text-md-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <img src="https://cdn-images-1.medium.com/max/658/1*iNEpDcRzLYWrlwU-gR3bWw@2x.png" alt="mxplayer" width="150">
+    
+              <p>
+                MX player is your one step destination for all your entertaintment such as latest movies , most popular web shows, Live tv channels , newly released songs etc.
+              </p>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Company</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">About Us</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">Careers</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">Contact US</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none" >FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-0">Legal</h5>
+    
+              <ul class="list-unstyled ">
+                <li>
+                  <a href="#!" class="text-white text-decoration-none" >Download apps</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">Tearms and services</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white text-decoration-none">Complience Report</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+           Copyright© 2022 MX Media & Entertaitments. All rights reserved.
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </section>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

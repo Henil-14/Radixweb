@@ -1,0 +1,29 @@
+.bg-black{
+    background:#000;
+    color:#fff;
+}
+
+#main-header{
+    img{
+        width: 90%;
+        height: 90%;
+    }
+    .port-item{
+        width: 30%;
+        .fa{
+            font-size: 3em;
+        }
+    }
+
+    .port-item:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+}
+@media(min-width:1200px){
+    .port-item{
+        padding:6em
+    }
+
+}
