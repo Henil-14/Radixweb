@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Properties</title>
+    <style type="text/css" media="screen">
+      .outer {
+        background-color: rgb(73, 21, 214);
+      }
+      .outer * {
+        display: inline-block;
+        vertical-align: middle;
+        background-color: rgb(15, 229, 236);
+      }
+      .one {
+        width: 50px;
+        height: 50px;
+      }
+      .two {
+        width: 50px;
+        height: 50px;
+      }
+      .three {
+        width: 200px;
+        height: 300px;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="one">static</div>
+      <div class="two">relative</div>
+      <div class="three">fixed and absolute</div>
+    </div>
+    <div>
+      <br />
+      <textarea
+        name=""
+        id=""
+        cols="70"
+        rows="5"
+        class="place"
+        placeholder="Message" >
+      </textarea>
+      <br />
+      <input class="send" type="button" placeholder="Send" value="Send" />
+    </div>
+  </body>
+</html>

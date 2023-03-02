@@ -1,0 +1,44 @@
+.container{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+     background-color: bisque; 
+    }
+    .card
+    {
+    border-radius: 20px;
+    width: 100%;
+    margin: 20px;
+    padding: 24px;
+    background-color: rgb(241, 241, 241);
+    }
+    .first-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+    @media screen and (min-width: 768px)
+    {
+    .card
+    {
+    width: 33%;
+    flex-wrap: wrap;
+    }
+    }
+    @media screen and (min-width: 992px)
+    {
+    .card
+    {
+    width: 25%; 
+    flex-wrap: wrap;
+    }
+    }
+    .referance{
+        text-align: center;
+    }
+    .image{
+        border-radius:50px;
+        
+    }
+   

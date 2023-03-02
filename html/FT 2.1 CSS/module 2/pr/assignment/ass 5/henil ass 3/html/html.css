@@ -1,0 +1,376 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5px;
+}
+
+
+.container{
+    
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+                        'left left right right right right';
+    gap: 1px;
+    
+
+}
+.header{
+    height: auto;
+    width: auto;
+    grid-area: header;
+    background-color: rgb(41, 40, 40);
+    display: flex;
+    justify-content:space-around;
+    color: aliceblue;
+    flex-wrap: wrap;
+    padding: 15px;
+    
+
+}
+
+#logo{
+    height: 12em;
+    width: 15em;
+    padding: 1.5rem;
+    border-radius: 0px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 12px 10px;
+    gap: 1rem;
+}
+.menu li a{
+    margin: 1rem;
+    font-size: large;
+    text-decoration: none;
+    color: aliceblue;
+}
+/* ==================================================== */
+/* ===================================leftbar================= */
+.left{
+    grid-area: left;
+    height: 150%;
+    background-color: rgb(82, 82, 82);
+    padding: 6px 25px;
+    
+}
+
+.left ul li , .left ul li a{
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(28, 16, 160);
+}
+.left ul li{
+    margin: 17px;
+    color: rgb(0, 0, 0);
+    
+   }
+/* ======================================================================= */
+.right{
+    grid-area: right;
+  
+    padding:10px ;
+    width: 100%;
+    /* padding: 5px 5px; */
+    background-color: aliceblue;
+   
+}
+/* ===========================home=========== */
+.home-image{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(211, 218, 225);
+}
+#home-right{
+    width: 50%;
+    margin: 10px 200px;
+    
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+form div,input,p,radio,select,submit,reset{
+    font-size: 20px;
+}
+form,form p{
+    border: 1px solid;
+    padding: 20px;
+    width: 80%;
+    background-color: rgb(231, 241, 241);
+    margin: auto;
+  
+    
+}
+form p{
+   margin: 15px;
+   padding: 10px;
+    background-color: rgb(208, 43, 17);
+}
+
+/* ================================================practice 2 ======= */
+.pnav ul{
+    display: flex;
+    background-color: rgba(9, 97, 197, 0.596);
+    padding: 20px;
+    border-radius: 15px;
+    list-style: none;
+}
+.pnav a{
+    font-size: x-large;
+    margin: 25px;
+    color: rgb(225, 225, 231);
+    text-decoration: none;   
+}
+.htmlt{
+    padding: 50px;
+    font-size: large;
+    background-color: rgb(231, 218, 201);
+}
+.depart ul,li,h1,h2{
+    margin-left: 22px;
+    margin-top: 12px;
+    font-size: medium;
+   line-height: 15px;
+}
+.htmlt>h1{
+font-size: xx-large;
+text-align: center;
+}
+.depart{
+    border-bottom:1px solid ;
+    margin: 20px 12px;
+}
+html h2{
+    background-color: rgba(0, 255, 255, 0.411);
+    padding: 12px;
+}
+.testm>h1{
+    background-color: rgba(216, 213, 19, 0.452);
+    padding: 12px;
+}
+.test>h1{
+    background-color: rgb(170, 22, 22);
+    padding: 12px;
+}
+
+/* ================================================ */
+th , td{
+    font-size: medium;
+    padding: 12px 35px;
+    border: 1px solid;
+    border-collapse:separate;
+    text-align: left;
+
+}
+#r-table{
+    border: 1px solid;
+    border-collapse:collapse;
+    width: 95%;
+    
+}
+#r-table img{
+   width: 22rem;
+   float: left;
+   margin: px;
+}
+#tp{
+    text-align: center;
+    font-size: 50px;
+    margin: 12px;
+
+}
+
+/* =============================respnsive============================ */
+
+@media only screen and (max-width: 900px){
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5px;
+    }
+    
+    
+    .container{
+        
+        display: grid;
+        grid-template-areas: 'header header header header header header'
+        'left left left left left left'
+                            'right right right right right right'
+                            ;
+        gap: 1px;
+        
+    
+    }
+    .header{
+        height: auto;
+        width: auto;
+        grid-area: header;
+        background-color: rgb(41, 40, 40);
+      
+        justify-content:space-around;
+        color: aliceblue;
+        flex-wrap: wrap;
+        padding: 15px;
+        display: block;
+        
+    
+    }
+    
+    #logo{
+        height: 12em;
+        width: 15em;
+        padding: 1.5rem;
+        border-radius: 0px;
+    }
+    .menu ul{
+        display: flex;
+        list-style: none;
+        padding: 12px 10px;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(50pxpx, 1fr) );
+    }
+    .menu li a{
+        margin: 1rem;
+        font-size: large;
+        text-decoration: none;
+        color: aliceblue;
+    }
+    /* ==================================================== */
+    /* ===================================leftbar================= */
+    .left{
+        grid-area: left;
+        height: 150%;
+        background-color: rgb(82, 82, 82);
+        padding: 6px 25px;
+        
+    }
+    
+    .left ul li , .left ul li a{
+        font-size: medium;
+        font-weight: bold;
+        color: rgb(28, 16, 160);
+    }
+    .left ul li{
+        margin: 17px;
+        color: rgb(0, 0, 0);
+        
+       }
+    /* ======================================================================= */
+    .right{
+        grid-area: right;
+      
+        padding:10px ;
+        width: 100%;
+        /* padding: 5px 5px; */
+        background-color: rgb(252, 254, 255);
+       
+    }
+    /* ===========================home=========== */
+    .home-right{
+        width: 50%;
+        
+        background-color: rgb(255, 255, 255);
+    }
+    #home-right{
+        width: 149%;
+        height: 102%;
+        margin: 3px 63px;
+      
+        
+    }
+    /* ++++++++++++++++++++++++++++++++++++++++++++++ */
+    form div,input,p,radio,select,submit,reset{
+        font-size: 20px;
+    }
+    form,form p{
+        border: 1px solid;
+        padding: 17px;
+        width: 77%;
+        background-color: rgb(231, 241, 241);
+        margin: 1aut;
+      
+        
+    }
+    form p{
+       margin: 15px;
+       padding: 10px;
+        background-color: rgb(208, 43, 17);
+    }
+    
+    /* ================================================practice 2 ======= */
+    .pnav ul{
+        display: block;
+        background-color: rgba(9, 97, 197, 0.596);
+        padding: 6px;
+        border-radius: 5px;
+        list-style: none;
+    }
+    .pnav a{
+        font-size: x-large;
+        margin: 25px;
+        color: rgb(225, 225, 231);
+        text-decoration: none;   
+    }
+    .htmlt{
+        padding: 2px;
+        font-size: large;
+        background-color: rgb(231, 218, 201);
+    }
+    .depart ul,li,h1,h2{
+        margin-left: 22px;
+        margin-top: 12px;
+        font-size: medium;
+       line-height: 15px;
+    }
+    .htmlt>h1{
+    font-size: xx-large;
+    text-align: center;
+    }
+    .depart{
+        border-bottom: 1px solid;
+        margin: 2px 20px
+    }
+    html h2{
+        background-color: rgba(0, 255, 255, 0.411);
+        padding: 12px;
+    }
+    .testm>h1{
+        background-color: rgba(216, 213, 19, 0.452);
+        padding: 12px;
+    }
+    .test>h1{
+        background-color: rgb(170, 22, 22);
+        padding: 12px;
+    }
+    
+    /* ================================================ */
+    th , td{
+        font-size: 5px;
+        padding: 3px 22px;
+        border: 1px solid;
+        border-collapse: separate;
+        text-align: left;
+    
+    }
+    #r-table{
+        border: 1px solid;
+        border-collapse:collapse;
+        width: 95%;
+        
+    }
+    #r-table img{
+       width: 22rem;
+       float: left;
+       margin: px;
+    }
+    #tp{
+        text-align: center;
+        font-size: 50px;
+        margin: 12px;
+    
+    }
+}
+

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Resume</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="text-bg-dark p-3 text-center"><h1>Henil Pithadiya</h1><br>Trainee Software Engineer
+    </div>
+    <div class="container-fluid">
+  </header>
+  <main>
+    
+    <div class="row">
+      <nav class="col-lg-4 navbar navbar-expand-lg bg-dark navbar-dark text-light">
+        
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-1" id="collapsibleNavbar">
+        <ul style="list-style-type:none" >
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#contact" href="#contact" aria-expanded="false"   aria-controls="contact">Contact</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#Skills" href="#Skills" aria-expanded="false"   aria-controls="Skills">Skills</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#Education" href="#Education" aria-expanded="false"   aria-controls="Education">Education</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#Language" href="#Language" aria-expanded="false"   aria-controls="Language">Language</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#project" href="#project" aria-expanded="false"   aria-controls="project">project</a></li>
+        </ul>
+      </div>
+  </nav>
+   
+    <div class="col-lg-8 bg-light">
+        <div class="tab-content">
+      <div class="tab-pane" role="tabpanel" id="contact"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Contact</h1>
+        <p ><strong>Email id:</strong>pithadiyahenil13@gmail.com</p><br>
+        <p><strong>Mobile no :</strong>7283977305</p><br>
+        <p><strong>Linkedin ID :</strong>xxxxxxxxx</p><br>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="Skills"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Skills</h1>
+        <p><strong>Programming Languages :</strong>
+          Java, C++</p><br>
+      <p><strong>Frontend :</strong> HTML5, CSS3,
+          JavaScript, React</p><br>
+      <p><strong>Backend :</strong> Node.js</p><br>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="Education"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Education Details</h1>
+        <table class="table table-striped">
+          <caption></caption>
+          <tr>
+              <th scope="row">University/college </th>
+              <th scope="row">Passing year </th>
+              <th scope="row">percentage/cgpa</th>
+          </tr>
+          <tr>
+              <td>GTU</td>
+              <td>2023</td>
+              <td>8.9</td>
+          </tr>
+          <tr>
+              <td>GSHEB</td>
+              <td>2019</td>
+              <td>89%</td>
+          </tr>
+          <tr>
+              <td>GSEB</td>
+              <td>2017</td>
+              <td>84%</td>
+          </tr>
+      </table>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="Language" aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Languages Known</h1>
+        <ul>
+          <p>Gujarati</p><br>
+          <p>English</p><br>
+          <p>Hindi</p><br>
+      </ul>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="project"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Projects</h1>
+        <h2>Employee leave management system</h2>
+            <p>This project is based on html , css and php .</p><br><br>
+        
+            <h2>Sensor based window security system</h2>
+            <p>This project is based on home security.</p>
+            <p>This is IOT based project</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+</div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
+
+<!-- 
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Resume</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="text-bg-dark p-3 text-center"><h1>Henil Pithadiya</h1><br>Trainee Software Engineer
+    </div>
+    <div class="container-fluid">
+  </header>
+  <main>
+    
+    <div class="row">
+      <nav class="col-lg-4 navbar navbar-expand-lg bg-dark navbar-dark text-light">
+        
+ 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mt-1" id="collapsibleNavbar">
+        <ul style="list-style-type:none" >
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#contact" href="#contact" aria-expanded="false"   aria-controls="contact">Contact</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#Skills" href="#Skills" aria-expanded="false"   aria-controls="Skills">Skills</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#Education" href="#Education" aria-expanded="false"   aria-controls="Education">Education</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#Language" href="#Language" aria-expanded="false"   aria-controls="Language">Language</a></li>
+            <li ><a class="nav-link h1"  data-bs-toggle="tab" data-bs-target="#project" href="#project" aria-expanded="false"   aria-controls="project">project</a></li>
+        </ul>
+      </div>
+  </nav>
+   
+    <div class="col-lg-8 bg-light">
+        <div class="tab-content">
+      <div class="tab-pane" role="tabpanel" id="contact"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Contact</h1>
+        <p ><strong>Email id:</strong>pithadiyahenil13@gmail.com</p><br>
+        <p><strong>Mobile no :</strong>7283977305</p><br>
+        <p><strong>Linkedin ID :</strong>xxxxxxxxx</p><br>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="Skills"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Skills</h1>
+        <p><strong>Programming Languages :</strong>
+          Java, C++</p><br>
+      <p><strong>Frontend :</strong> HTML5, CSS3,
+          JavaScript, React</p><br>
+      <p><strong>Backend :</strong> Node.js</p><br>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="Education"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Education Details</h1>
+        <table class="table table-striped">
+          <caption></caption>
+          <tr>
+              <th scope="row">University/college </th>
+              <th scope="row">Passing year </th>
+              <th scope="row">percentage/cgpa</th>
+          </tr>
+          <tr>
+              <td>GTU</td>
+              <td>2023</td>
+              <td>8.9</td>
+          </tr>
+          <tr>
+              <td>GSHEB</td>
+              <td>2019</td>
+              <td>89%</td>
+          </tr>
+          <tr>
+              <td>GSEB</td>
+              <td>2017</td>
+              <td>84%</td>
+          </tr>
+      </table>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="Language" aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Languages Known</h1>
+        <ul>
+          <p>Gujarati</p><br>
+          <p>English</p><br>
+          <p>Hindi</p><br>
+      </ul>
+      </div>
+      <div class="tab-pane" role="tabpanel" id="project"  aria-labelledby="lang-tab">
+        <h1 class="text-light bg-dark mt-1 text-center">Projects</h1>
+        <h2>Employee leave management system</h2>
+            <p>This project is based on html , css and php .</p><br><br>
+        
+            <h2>Sensor based window security system</h2>
+            <p>This project is based on home security.</p>
+            <p>This is IOT based project</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+  <footer>
+    
+  </footer>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html> -->
+
+<!-- 
+<div class="d-flex align-items-start">
+  <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+  </div>
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+  </div>
+</div> -->

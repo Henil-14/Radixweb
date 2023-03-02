@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            border: 2px solid black;
+            display: inline-block;
+            min-width: 100%;
+            /* align-items: center; */
+        }
+        header {
+            border: 2px solid rgb(0, 0, 0);
+            width: 100%;
+            background-color: antiquewhite;
+        }
+        .head ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .head {
+
+            margin: 0px 15%;
+        }
+        .head ul li {
+            padding: 10px;
+        }
+        .imgi {
+            margin: 1px 15%;
+        }
+        .image .num {
+            font-size: 35px;
+        }
+        .logo {
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar {
+            margin: 10px 15%;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar ul li {
+            list-style: none;
+            padding: 7px 8px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .navbar ul li a:hover{
+            color: rgb(0, 0, 0);
+            background-color:cornsilk;
+        }
+        section {
+            background-color: rgb(216, 203, 203);
+        }
+        section {
+            border: 2px solid rgb(0, 0, 0);
+        }
+        .container {
+            
+            margin: 0px 15%;
+            box-sizing: border-box;
+        }
+        .box {
+            
+            margin: 20px 0px;
+            padding: 12px 0px;
+            width: 100%;
+            display: flex;
+            gap: 50px;
+            justify-content: space-between;
+        }
+        form {
+            width: 100%;   
+        }
+        fieldset {
+            width: 100%;
+            margin-left: 19px;
+        }
+        .row {
+            font-size: 20px;
+            margin: 19px 0;
+        }
+        .one,
+        .two {
+            margin: 5px;
+        }
+        .one input {
+            margin: 10px;
+            padding: 3px;
+            width: 40%;
+            border-radius: 7px;
+        }
+        .two input {
+            margin: 10px;
+            width: 40%;
+            padding: 3px;
+            border-radius: 7px;
+        }
+        textarea {
+            padding: 3px;
+            border-radius: 6px;
+        }
+        .send {
+            width: 87%;
+        }
+        .top {
+            background-color: rgb(107, 107, 226);
+        }
+        .bar {
+            
+            margin: 0px 15%;
+        }
+        .mid {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .mid1 {
+            margin: 19px 0;
+            font-size: 20px;
+
+            color: white;
+        }
+        .mid2 {
+            
+            width: 20%;
+            margin: 20px 30px;
+        }
+        .mid2 input {
+            margin: 15px 0px;
+            border-radius: 4px;
+            padding: 20px;
+        }
+        .video {
+            background-color: rgb(146, 145, 145);
+        }
+        .vid {
+            margin: 0px 15%;
+        }
+        .zero {
+            display: flex;
+            gap: 70px;
+        }
+        .zero img {
+            margin: 20px 0;
+            width: 45%;   
+        }
+        .second {
+            width: 35%;
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+        .spike {
+            margin: 0px 15%;
+        }
+        .jerry {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+        .t1 {
+            width: 29%;   
+        }
+        .t1 img {
+            width: 100%;
+        }
+        .t1 div p {
+            font-size: large;
+        }
+        .foot {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .f1 {
+            margin: auto;
+            color: white;
+        }
+        @media screen and (max-width: 900px) {
+            .head ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                width: 100%;
+                margin-left: 0;
+            }
+            .head {
+                text-align: center;
+            }
+            .head ul li {
+                font-size: x-large;
+            }
+            .logo {
+                display: flex;
+                flex-wrap: wrap;
+               margin: 0;
+            }
+            .logo img {
+                width: 8%;
+                margin-right: auto;
+            }
+            .image .num {
+                width: 50%;
+                margin-left: auto;
+            }
+            .navbar ul {       
+           margin: auto;
+            }
+            .navbar ul li {
+                margin: auto;  
+            }
+            .box {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-left: 0;
+            }
+            fieldset {
+                width: 100%;
+                margin-left: 100px;
+            }
+            .one input {
+                width: 30%;
+                padding: 10px;
+            }
+            .two input {
+                width: 30%;
+                padding: 10px;
+            }
+            textarea {
+                width: 65%;
+            }
+            .send {
+                width: 65%;
+            }
+            .mid {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+            .foot {
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                width: 100%;
+            }
+            .f1 {
+                margin: auto;
+                width: 34%;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            .head ul {
+                width: 100%;
+            }
+            .head ul li {
+               font-size: x-large;
+            }
+            .logo img {
+                width: 17%;
+            }
+            .image .num {
+                width:40%;
+                margin-left: auto;
+            }
+            .image .num p {
+                font-size: 20px;
+            }
+            .navbar ul {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-left: 0;
+            }
+            .navbar ul {
+                width: 65%;
+                margin: auto;
+            }
+            .navbar ul li {
+                margin: auto;
+                width: 55%;
+            }
+            .navbar ul li a {
+                font-size: 25px;
+            }
+            .box {
+                /* font-size: 33px; */
+                width: 90%;
+                margin: auto;
+            }
+            fieldset {  
+                width: 100%;
+                margin: auto;
+            }
+            .one input {
+                width: 100%;
+                padding: 10px;
+            }
+            .two input {
+                width: 100%;
+                padding: 10px;
+
+            }
+            form {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+            }
+            .row p,
+            input,
+            textarea {
+                font-size: 20px;
+            }
+            .send {
+                width: 100%;
+            }
+            .mid {
+                width: 90%;
+                margin: auto;
+            }
+            .mid1 p {
+                font-size: 20px;
+            }
+            .mid2 {
+                margin: auto;
+
+                width: 60%;
+            }
+            .mid2 input {
+                font-size: 20px;
+            }
+            .zero {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-left: 0;
+            }
+            .zero img {
+                width: 100%;
+            }
+            .second {
+                width: 90%;
+                margin: auto;
+            }
+            .second p {
+                font-size: 20px;
+            }
+            .second input {
+                font-size: 20px;
+
+            }
+            .jerry {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                margin-left: 0;
+            }
+            .jerry .t1 {
+                width: 100%;
+            }
+            .jerry .t1 p {
+                font-size: 20px;
+            }
+            .foot {
+                display: flex;
+               
+                flex-wrap: wrap;
+                margin-left: 0;
+                width: 100%;   
+            }
+            .f1 {    
+               margin-left:78px;
+                padding: 5px;
+            }
+        }
+        @media (max-width:320px){
+            .head ul li{
+                font-size: large;
+            }
+            .logo img {
+                width: 20%;
+            }
+
+            .image .num {
+                /* width:40%; */
+                margin-left: auto;
+            }
+
+            .image .num p {
+                font-size: 15px;
+            }
+            .navbar ul {
+                width: 65%;
+                margin: auto;
+            }
+
+            .navbar ul li {
+                margin: auto;
+                width: 55%;
+            }
+
+            .navbar ul li a {
+                font-size: 15px;
+            }
+            .foot {
+                display: flex;
+                flex-direction: column;
+                /* flex-wrap: wrap; */
+
+                width: 100%;
+                /* margin: auto; */
+                
+            }
+
+            .f1 {
+                /* width: 100%; */
+                margin-left:108px;
+                /* margin: auto; */
+                padding: 5px;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <ul>
+                <li style="list-style: none;">Shopping Cart</li>
+                <li style="list-style: none;">Sign-In / Register</li>
+            </ul>
+        </div>
+    </header>
+    <div class="image">
+        <div class="imgi">
+
+            <div class="logo">
+                <img src="https://apitutorial.dev.radixweb.net/public/uploads/files1676030625964-logo.png" alt="" srcset="">
+                <div class="num">
+                    <p style="padding-top: 15px; color: rgb(77, 75, 74); font-size: 1.5rem;"><strong>512-219-8000</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Yards Signs</a></li>
+                <li><a href="#">Banners</a></li>
+                <li><a href="#">Accesories</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Materials</a></li>
+                <li><a href="#">FAQ</a></li>
+                <div>
+
+                    <li style=" font-size:medium;margin-bottom:5px; background-color: orange; border: 2px solid black; "><a style="color:white;"
+                            href="#">Custom
+                            Quote</a></li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="container">
+            <div class="box">
+                <div class="row" style="color:rgb(80, 80, 80);">
+                    <h1>Big Headline</h1>
+                    <h4>Smaller Subhead Ahead</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic sint laborum soluta
+                        distinctio eos vero, vel atque natus rerum earum. Facere corporis explicabo alias tempore
+                        inventore ut, numquam accusamus.</p>
+                    <input
+                        style="background-color: orange; margin-top: 25px; width: auto; padding: 10px; border-radius: 20px; color: white;"
+                        type="button" value="Get started">
+                </div>
+                <form>
+                    <fieldset style="border:0;">
+                        <div class="one">
+                            <input type="text" name="Fname" placeholder="First Name:">
+                            <input type="text" name="Lname" placeholder="Last Name:">
+                        </div>
+                        <div class="two">
+                            <input type="email" name="Email" placeholder="Email:">
+                            <input type="number" name="Number" placeholder="Mobile Number">
+                        </div>
+                        <textarea style="margin-left: 10px;" cols="50" rows="5">Message </textarea>
+                        <input class="send"
+                            style="margin-left: 10px; margin-top: 12px; padding:5px;border-radius: 4px; background-color: orange; color: white;"
+                            type="button" value="Send">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="top">
+        <div class="bar">
+
+            <div class="mid">
+                <div class="mid1">
+                    <h3>New Heading Begins Here</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim architecto ea fugiat temporibus
+                        eveniet fugit asperiores nobis! Reiciendis eius veritatis, repudiandae minus doloremque ipsum
+                        molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sequi nam
+                        consectetur! Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                </div>
+                <div class="mid2">
+                    <input style="background-color: white;color: rgb(8, 8, 226);  border-radius: 4px; width: auto;" type="button"
+                        value="Design It Now">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="video">
+        <div class="vid">
+            <div class="zero">
+
+
+                <img src="https://apitutorial.dev.radixweb.net/public/uploads/files1676030611766-img.jpg" alt="Error" srcset="">
+
+                <div class="second">
+                    <h2>Good, Afternoon</h2>
+                    <h3>Lets Play the Video :)</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolore rerum, quisquam earum
+                        ipsa asperiores reprehenderit quo incidunt obcaecati dolores architecto sed, ipsam laudantium.
+                        Doloribus harum voluptatem be.</p>
+                    <input style="padding: 10px;width: auto;  color: white; background-color: orange;" type="button"
+                        value="Learn More">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tom">
+        <div class="spike">
+            <div class="jerry">
+                <div class="t1">
+                    <img src="https://images.pexels.com/photos/4226881/pexels-photo-4226881.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" srcset="">
+                    <div>
+                        <p style="text-align:center ; ">Project 1</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit soluta facilis accusantium!
+                        </p>
+                    </div>
+                </div>
+                <div class="t1">
+                    <img src="https://images.pexels.com/photos/6159689/pexels-photo-6159689.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" srcset="">
+                    <div>
+
+                        <p style="text-align:center ; ">Project 2</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, debitis.</p>
+                    </div>
+                </div>
+                <div class="t1">
+                    <img src="https://images.pexels.com/photos/4226882/pexels-photo-4226882.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                        alt="" srcset="">
+                    <div>
+
+                        <p style="text-align:center ; ">Project 3</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin:20px 45%;">
+        <div>
+            <input type="button"
+                style="font-size:x-large ; background-color:orange; border-radius: 3px;padding: 12px; color: white;"
+                value="Learn More">
+        </div>
+    </div>
+    </div>
+
+    <footer style="background-color: gray;">
+        <div class="foot">
+            <div class="f1">
+                <h3>Help</h3>
+                <p>Contact us</p>
+                <p>F.A.Q.</p>
+                <p>Sitemap</p>
+                <p>Pricing</p>
+                <p>Redeem Promo</p>
+                <br>
+                <h3>Account</h3>
+                <p>My Account</p>
+            </div>
+            <div class="f1">
+                <h3>Products</h3>
+                <p>Yard signs</p>
+                <p>Real Estate Signs</p>
+                <p>Vinyl Banners</p>
+                <p>Car Magnetics</p>
+                <p>Banner Stands</p>
+                <p>Accessories</p>
+                <p>Design Services</p>
+            </div>
+            <div class="f1">
+                <h3>Company</h3>
+                <p>Overview</p>
+                <p>Press room</p>
+                <p>Careers</p>
+                <p>Reviews</p>
+                <br>
+                <h3>Programs</h3>
+                <p>Affiliate</p>
+            </div>
+            <div class="f1">
+                <h3>Help</h3>
+                <p>Contact us</p>
+                <p>F.A.Q.</p>
+                <p>Sitemap</p>
+                <p>Pricing</p>
+                <p>Redeem Promo</p>
+                <br>
+                <h3>Account</h3>
+                <p>My Account</p>
+            </div>
+            <div class="f1">
+                <h3>Products</h3>
+                <p>Yard signs</p>
+                <p>Real Estate Signs</p>
+                <p>Vinyl Banners</p>
+                <p>Car Magnetics</p>
+                <p>Banner Stands</p>
+                <p>Accessories</p>
+                <p>Design Services</p>
+            </div>
+            <div class="f1">
+                <h3>Company</h3>
+                <p>Overview</p>
+                <p>Press room</p>
+                <p>Careers</p>
+                <p>Reviews</p>
+                <br>
+                <h3>Programs</h3>
+                <p>Affiliate</p>
+            </div>
+        </div>
+    </footer>
+    <footer style="background-color:rgb(59, 58, 58) ;">
+        <div style="text-align: center;">
+            <p style="color: white;">Copy Rights Claimed by RadixWeb</p>
+        </div>
+    </footer>
+</body>
+
+</html>

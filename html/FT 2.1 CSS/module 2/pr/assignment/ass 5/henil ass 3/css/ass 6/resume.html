@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume </title>
+</head>
+<style>
+     *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;      
+        }
+    .flex-container{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .flex-item-left{
+        flex: 30%;
+        background-color: rgb(105, 102, 102);
+        font-size: x-large;
+    }
+    .flex-item-right > div{
+            display: none;
+        }
+        .flex-item-right > div:target{
+     display: block;
+        }
+    table,
+        th,
+        td {
+            border: 5px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            font-size: 1rem;
+            text-align: center;
+            background-color: #cee4e4;   
+        }
+    a:visited {
+            color: rgba(0, 0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+    }
+    a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    .flex-item-right{
+        text-align: center;
+        flex: 70%;
+    }
+    #img{
+        width: 30%;
+        margin-left: 4rem;
+        border: 1px solid;
+        margin-top: 10px;
+    }
+    .header{
+        
+            width: auto;
+            background-color: rgb(41, 40, 40);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+            font-size: larger;
+    }
+    .details {
+            margin: 10px;
+            font-family: monospace;
+            flex: 30%;
+            text-align: center;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .flex-container {
+            display:flex;
+        flex-wrap: wrap;
+        }
+
+        #flex-item-right>div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .header {
+            height: 100px;
+            width: auto;
+            grid-area: header;
+            background-color: rgb(41, 40, 40);
+            text-align: center;
+            justify-content: space-around;
+            color: aliceblue;
+            padding: 15px;
+            font-size: larger;
+        }
+        .flex-item-left{
+            grid-area: left;
+            height: 150%;
+            background-color: rgb(82, 82, 82);
+           
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+            margin-top: auto;
+        }
+
+        .flex-item-right{
+
+            float: right;
+            display: grid;
+            text-align: center;
+        }
+
+        #img {
+            height: 100px;
+            width: 100px;
+            margin-right: 50px;
+        }
+
+        a {
+            color: aliceblue;
+            padding: 1.5rem;
+        }
+
+        
+
+        a:visited {
+            color: rgb(229, 241, 173);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .contact {
+            padding-top: 20px;
+
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+        }
+
+        .details {
+            font-family: monospace;
+            grid-area: right;
+            
+
+        }
+
+        .skills {
+            padding-top: 20px;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            font-size: 1rem;
+            text-align: center;
+            background-color: #cee4e4;
+            width: 100%;
+        }
+
+        .main>div{
+            display: none;
+        }
+
+.main>div:target{
+    display: block;
+}
+    } 
+</style>
+<body>
+    <section>
+        <div class="header">
+          
+            <div class="right">
+                <h1>Henil Pithadiya</h1><br>
+                <p>Trainee Software Engineer</p>
+            </div>
+        </section>
+    
+    <div class="flex-container">
+       
+       <div class="flex-item-left">
+        <div class="img">
+            <img src="person.png" alt="image" id="img">
+        </div>
+        <ul>
+            <li style="list-style: none;"> <a href="#contact" style="text-decoration: none;">Contact</a></li><br>
+            <li style="list-style: none;"> <a href="#Skills" style="text-decoration: none;">Skills</a></li><br>
+            <li style="list-style: none;"> <a href="#Education" style="text-decoration: none;">Education</a></li><br>
+            <li style="list-style: none;"> <a href="#Language" style="text-decoration: none;">Language</a></li><br>
+            <li style="list-style: none;"> <a href="#Projects" style="text-decoration: none;">Projects</a></li><br>
+        </ul>
+       </div>
+       <div class="flex-item-right">
+        <div id="contact">
+            <div class="title">
+                <h2 style="background-color:Gray;"><strong>Contact</strong></h2><br>
+            </div>
+            <div class="details">
+                <p><strong>Email id:</strong>pithadiyahenil13@gmail.com</p><br>
+                <p><strong>Mobile no :</strong>7283977305</p><br>
+                <p><strong>Linkedin ID :</strong>xxxxxxxxx</p><br>
+            </div>
+       </div>
+
+       <div id="Skills">
+        <div class="title">
+            <h2 style="background-color:Gray;">Skills</h2><br>
+        </div>
+        <div class="details">
+            
+                <p><strong>Programming Languages :</strong>
+                    Java, C++</p><br>
+                <p><strong>Frontend :</strong> HTML5, CSS3,
+                    JavaScript, React</p><br>
+                <p><strong>Backend :</strong> Node.js</p><br>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Education">
+        <div class="title">
+            <h2 style="background-color:Gray;">Education</h2><br>
+        </div>
+        <div class="details">
+            <table>
+                <tr>
+                    <th>University/college </th>
+                    <th>Passing year </th>
+                    <th>percentage/cgpa</th>
+                </tr>
+                <tr>
+                    <td>GTU</td>
+                    <td>2023</td>
+                    <td>8.9</td>
+                </tr>
+                <tr>
+                    <td>GSHEB</td>
+                    <td>2019</td>
+                    <td>89%</td>
+                </tr>
+                <tr>
+                    <td>GSEB</td>
+                    <td>2017</td>
+                    <td>84%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="Language">
+        <div class="title">
+        <h2 style="background-color:Gray;">Language</h2>
+    </div>
+    <div class="details">
+        <ul>
+            <p>Gujarati</p><br>
+            <p>English</p><br>
+            <p>Hindi</p><br>
+        </ul>
+    </div>
+</div>
+
+<div id="Projects">
+    <div class="title">
+    <h2 style="background-color:Gray;">Projects</h2><br>
+</div>
+<div class="details">
+            <h2>Employee leave management system</h2>
+            <p>This project is based on html , css and php .</p><br><br>
+        
+            <h2>Sensor based window security system</h2>
+            <p>This project is based on home security.</p>
+            <p>This is IOT based project</p>
+        </li>
+    </ul>
+</div>
+    </div>
+</div>
+</body>
