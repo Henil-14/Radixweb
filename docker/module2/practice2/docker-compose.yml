@@ -1,0 +1,15 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    ports:
+      - 8091:80
+    volumes:
+      - ./mrc:/usr/share/nginx/html
+
+  shiny:
+    image: nginx
+    ports:
+      - 8092:80
+    volumes:
+      - ./src:/usr/share/nginx/html

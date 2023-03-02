@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Employee form</title>
+    </head>
+<body>
+    <h1>RadixWeb Employee Form </h1>
+    <form>
+        <label for="fname"><strong>First Name:</strong></label><br>
+        <input type="text" required id="fname" name="fname" value=""><br>
+        <br><br>
+        <label for="lname"><strong>Last Name:</strong></label><br>
+        <input type="text" required id="lname" name="lname" value=""><br>
+        <br><br>
+        <label for="age"><strong>Age:</strong></label><br>
+        <input type="number" required id="lname" name="number" value="">
+        
+        <br><br>
+        <label for="gender"><strong>Gender:</strong></label><br>
+        <input type="radio" required id="Male" name="Male" value="Male">
+        <label for="gender1"> Male</label>
+        <input type="radio" required id="Female" name="Male" value="Female">
+        <label for="gender2"> Female</label>
+        <input type="radio" required id="Other" name="Male" value="Other">
+        <label for="gender3"> Other</label>
+        <br>
+        <br>
+        <label for="Designation"><strong>Designation:</strong></label><br>
+        <select name="Designation" required id="Designation">
+            <option value="Select">Select</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Junior developer">Junior developer</option>
+            <option value="Senior developer">Senior developer</option>
+            <option value="Head of department">Head of department</option>
+        </select>
+        <br>
+        <br>
+        <label for="Salary"><strong>Salary:</strong></label><br>
+        <input type="number" required id="Salary" name="Salary" value="">
+        <br>
+        <br>
+        <label for="Location"><strong>Location:</label></strong></label><br>
+        <select name="Location" required id="Location"><br><br>
+            <option value="First Floor">First Floor</option>
+            <option value="Second Floor">Second Floor</option>
+            <option value="Third Floor">Third Floor</option>
+            <option value="Forth Floor">Forth Floor</option>
+        </select>
+        <br>
+        <br>
+        <label for="email"><strong>Enter Your radixweb.com Email:</strong></label><br>
+           <input type="email" required id="email"
+           pattern=".+@radixweb\.com" size="30" required><br><br>
+        <br>
+        <br>
+        <label for="Date Of Joining"><strong>Date Of Joining:</label></strong><br>
+            <input type="datetime-local" required id="date " name="date" value="ddmmyyyy">
+        <br>
+        <br>
+        <label for="phone"><strong>Enter a Contact Number:</strong></label><br>
+        <input type="tel" required id="phone" name="phone" placeholder="91-1234567890" pattern="[0-9]{2}-[0-9]{10}">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="Button" value="Reset">
+        </form>
+</body>
+</html> 
