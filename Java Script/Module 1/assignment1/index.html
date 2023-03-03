@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator using Javascript</title>
+
+</head>
+
+<body>
+    <form >
+        <h2>Simple Calculator</h2><br><br>
+        <label for="num-one"><strong>Please enter first number:</strong></label><br>
+        <input id="num-one" name="num-one" type="text" placeholder="First Number"> <br><br>
+        <label for="num-one"><strong>Please enter second number:</strong></label><br>
+        <input id="num-two" name="num-two" type="text" placeholder="Second Number"><br><br>
+
+        <input id="box1" name="sign-area" type="radio" value="add">Addition<br>
+        <input id="box2" name="sign-area" type="radio" value="subtract">Subtraction<br>
+        <input id="box3" name="sign-area" type="radio" value="multiply">Multiplicati<br>
+        <input id="box4" name="sign-area" type="radio" value="divide">Division<br><br>
+        <button onclick="outcome()" type="button">calculate</button>
+        <button onclick="reset()" type="button">Reset</button>
+        <h1 id="resultArea"></h1>
+        </div>
+    </form>
+
+    <script>
+        function outcome() {
+            var x = parseInt(document.getElementById("num-one").value);
+            var y = parseInt(document.getElementById("num-two").value);
+            var z = 0;
+
+            if (document.getElementById("box1").checked) {
+                z = x + y;
+            }
+            else if (document.getElementById("box2").checked) {
+                z = x - y;
+            }
+            else if (document.getElementById("box3").checked) {
+                z = x * y;
+            }
+            else {
+                z = x / y;
+            }
+            document.getElementById("resultArea").innerHTML = " Result is: " + String(z);
+        } 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <label>Employee Id:</label>
+        <input
+          class=""
+          placeholder="enter your id"
+          required
+          id="id"
+          type="number"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Employee Name:</label>
+        <input
+          class=""
+          placeholder="Your Name Here"
+          required
+          id="name"
+          type="text"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Age:</label>
+        <input
+          placeholder="Your Age Here"
+          required
+          id="age"
+          type="number"
+          min="0"
+          max="100"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Gender:</label>
+        <input id="male" type="radio" required value="Male" name="Gender" />
+        <label>Male:</label>
+        <input id="female" type="radio" required value="Female" name="Gender" />
+        <label>Female:</label>
+      </div>
+      <br />
+      <div>
+        <label>Designation:</label>
+        <input
+          placeholder="Your Designation Here"
+          required
+          id="designation"
+          type="text"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Salary:</label>
+        <input
+          placeholder="Your Salary Here"
+          required
+          id="salary"
+          type="number"
+        />
+      </div>
+      <br />
+      <div>
+        states:
+        <select name="state" id="state">
+          <option value="" selected="selected">Select state</option>
+        </select>
+        <br /><br />
+
+        city:
+        <select name="city" id="city">
+          <option value="" selected="selected">Please select City first</option>
+        </select>
+        <br /><br />
+      </div>
+      <br />
+      <div>
+        <label>Email:</label>
+        <input placeholder="Your Email Here" required id="email" type="email" />
+      </div>
+      <br />
+      <div>
+        <label>Date of Joining:</label>
+        <input id="doj" type="date" />
+      </div>
+      <br />
+      <div>
+        <label>Contact Number:</label>
+        <input placeholder="Your Ph.No Here" required id="cn" type="number" />
+      </div>
+      <br />
+      <div>
+        <input
+          type="button"
+          value="Submit"
+          onclick="formdata(),reset(),show()"
+        />
+      </div>
+    </form>
+    <table id="display"></table>
+    <script src="main.js"></script>
+  </body>
+</html>
