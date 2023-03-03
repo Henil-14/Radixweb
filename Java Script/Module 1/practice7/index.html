@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice7</title>
+</head>
+<body>
+    <h1>Lists:</h1>
+    <button onclick="call()">List Operation</button>
+    <h3 id="output1"></h3>
+    <h3 id="output2"></h3>
+    <h3 id="output3"></h3>
+    <h3 id="output4"></h3>
+    <h3 id="output5"></h3>
+    
+    <script>
+
+    function call() {
+    const list = [1, 2, 3, 4, 5];
+    document.getElementById('output1').innerHTML = ' ' + list;
+  
+    list.push(6);
+    document.getElementById('output2').innerHTML = 'After pushing 5 = ' + list;
+  
+    list.pop();
+    document.getElementById('output3').innerHTML = 'After pop = ' + list;
+  
+    list.shift();
+    document.getElementById('output4').innerHTML = 'After shift = ' + list;
+  
+    list.unshift(9, 8);
+    document.getElementById('output5').innerHTML = 'After unshift = ' + list;
+  }
+        
+    </script>
+
+</body>
+</html>

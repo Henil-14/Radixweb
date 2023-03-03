@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+</head>
+
+<body>
+    <div>
+Greater: <p id="big" ></p>
+        sum: <p id="sum"></p>
+    </div>
+
+
+    <script>
+        let a, b, c;
+        a = parseInt(prompt("Enter 1st no."));
+        b = parseInt(prompt("Enter 2nd no."));
+        c = parseInt(prompt("Enter 3rd no."));
+        document.getElementById("big").innerHTML = Math.max(a, b, c);
+        
+        var s = 0;
+        if (a > 40) {
+            s = s + a;
+        }
+        if (b > 40) {
+            s = s + b;
+
+        }
+         if (c > 40) {
+            s = s+ c;
+        }
+        document.getElementById("sum").innerHTML = s; 
+    </script>
+
+</body>
+
+</html>
