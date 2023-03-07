@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+  <div>
+    <div>
+      <label for="date">Enter date</label><br><br>
+      <input type="text" id="data" placeholder="MM-DD-YYYY" />
+    </div><br>
+    <input type="button" value="Show Date" onclick="dat()" /><br>
+    <div id="display"></div>
+  </div>
+  <script>
+    function dat() {
+      let data = document.getElementById('data').value;
+      let str = data.split('-');
+      let year = str[2];
+      let month = str[0];
+      let day = str[1];
+      if (dayCheck(day, year, month)) {
+        const time = new Date(data);
+        document.getElementById('display').innerHTML = time;
+      } else {
+        alert('invalid');
+      }
+    }
+
+    function yearCheck(year) {
+      if (year % 400 == 0 && year % 4 == 0 && year % 100 != 0) {
+        return true;
+      }
+      return false;
+    }
+
+    function monthCheck(month) {
+      if ((month % 2 == 1 || month == 8) && month != 2) {
+        return true;
+      }
+      return false;
+    }
+    function dayCheck(day, year, month) {
+
+      if (day > 30 && !monthCheck(month)) {
+        if (
+          (month == 2 && day > 28 && !yearCheck(year)) ||
+          month > 12 ||
+          day > 31
+        ) {
+          return false;
+        }
+        return true;
+      } else if (
+        (month == 2 && day > 28 && !yearCheck(year)) ||
+        day > 31 ||
+        month > 12
+      ) {
+        return false;
+      }
+      return true;
+    }
+
+  </script>
+</body>
+
+</html>
