@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <style type = "text/css">
+        #container{
+            background-color: lightgray;
+            width:30%;
+            padding:10px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div id="container">
+        <h3><strong>Area of Rectangle:</h3></label>
+        <label>Length:</label><br><br>
+        <input type="number" id="length" placeholder="length" required><br><br><br>
+        <label>Width:</label><br><br>
+        <input type="number" id="width" placeholder="width" required><br><br>
+        <input  type="button" onclick="call()" value="submit" > 
+        <input type="button"  id="" value="Reset" onclick="reset()"><br/><br/>
+        <span id="spanResult">Area of Rectangle = 0</span>
+ </div>
+
+    <script>
+        function call() {
+            function Rect(length, width, result) {
+                this.first = length;
+                this.second = width;
+                this.third = result;
+            }
+            var l = document.getElementById("length").value;
+            var w = document.getElementById("width").value
+            var r = l * w;
+            var areaofrec = new Rect(l, w, r)
+            document.getElementById("spanResult").innerHTML = "Area of Rectangle = "+areaofrec.third
+        }
+
+        function reset(){
+        document.getElementById("length").value ="0";
+        document.getElementById("width").value ="0";
+        document.getElementById("spanResult").innerHTML = "Area of Rectangle = 0 " ;
+    }
+    </script>
+</body>
+
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice5</title>
+</head>
+<body>
+    <p id="first"> </p><br><br>
+
+    <p id="second"> </p><br><br>  
+
+    <script>
+        const person = {
+            fullName: function (gender){
+                return "<strong> First Name : </strong>"  +this.a + "<br>" +" <strong>Last Name : </strong>" + this.b + "<br>"+ "<strong> Age : </strong>" + this.c + "<br>" +"<strong> Gender : </strong>" + gender;
+            }
+        }
+
+        const firstp = {
+            a: "Henil",
+            b: "Pithadiya",
+            c: 22
+        }
+
+        const secondp = {
+            a: "Dastgir",
+            b: "Sheikh",
+            c: 24
+        }
+
+        document.getElementById("first").innerHTML = person.fullName.apply(firstp,["male"]);
+        document.getElementById("second").innerHTML = person.fullName.apply(secondp,["male"]);
+    </script>
+</body>
+</html>

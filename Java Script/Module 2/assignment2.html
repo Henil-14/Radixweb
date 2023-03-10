@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+        </div>
+
+    </div>
+    
+     <h1 id="timer"></h1><br><br>
+    <input onclick="set()" type="button"  id="start" value="Start exam" > 
+
+    <script>
+        function set(){
+            var time = new Date();
+            time.setHours(3,0,0);
+            function exam(){
+                document.getElementById('start').style.display = 'none';
+                time.setMilliseconds(-1000);
+                var hour = time.getHours();
+                var minuts = time.getMinutes();
+                var seconds = time.getSeconds();
+                document.getElementById('timer').innerHTML = 'EXAM STARTED' + '<br>' + hour + ':' + minuts + ':' + seconds;
+            
+            if (hour == 0 && minutes == 0 && seconds == 0) {
+                document.getElementById('timer').innerHTML = 'Exam is ended';
+                alert('Exam Finished');
+                clearInterval(x);
+                document.getElementById('start').style.display = 'block';
+                document.getElementById('start').value = 'Re-start Exam';
+            }
+            }
+            var x = setInterval(function (){
+                exam();
+            },1000);
+        }
+    </script>
+</body>
+</html>

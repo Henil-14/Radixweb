@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 9</title>
+
+<body>
+    <form>
+        <h1>check whether it is string or not</h1>
+        <input type="text" id="str" placeholder="Enter input">
+        <h2 id="done" ></h2>
+        <button type="button" onclick="demo()"> check</button>
+        <button> reset</button>
+
+    </form>
+
+    <script>
+        function demo(){
+        var i = document.getElementById("str").value;
+        let myPromise = new Promise(function (myResolve, myReject) {
+           if(isNaN(i)){
+           setTimeout(function() { myResolve(i.split("").reverse().join("")) },500)
+           }
+           else{
+            setTimeout(function() { myReject("Wrong input")},500)
+           }
+
+
+        });
+        myPromise.then(
+            function (value) {document.getElementById("done").innerHTML=value; },
+            function (error) {document.getElementById("done").innerHTML=error; }
+        );
+    }
+    </script>
+</body>
+
+</html>

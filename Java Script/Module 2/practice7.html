@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peactice7</title>
+</head>
+
+<body>
+    <h1> Find the square of a no.</h1>
+    <input type="text" id="num" placeholder="Enter number here">
+    <button onclick="myFunction()">Calulate</button>
+    <h2 id="ans"></h2>
+    <script>
+        function myFunction() {
+            var n = parseInt(document.getElementById("num").value);
+            function result(sum) {
+                document.getElementById("ans").innerHTML = sum;
+            }
+            function cal(n, result) {
+                var sum = n ** 2;
+                result(sum);
+            }
+            cal(n, result);
+        }
+    </script>
+</body>
+
+</html>

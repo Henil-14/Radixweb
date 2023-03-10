@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice6</title>
+</head>
+<body>
+    <h1> Function closure : </h1>
+    <h3>A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.</h3>
+
+    <button onclick="main()" >Closure function check</button>
+    <p id="child"></p>
+    <script>
+        function main(){
+           var  a= prompt("Enter your name:");
+
+            function child(){
+               document.getElementById("child").innerHTML = "<strong>Entered name is : </strong>" + a;
+            }
+            child()
+        }
+
+    </script>
+</body>
+</html>

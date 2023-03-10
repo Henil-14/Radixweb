@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+    <style type = "text/css">
+        #container{
+            background-color: lightgray;
+            width:20%;
+            padding:10px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h3><strong>Radious:</h3></label>
+
+        <input type="text" name="" id="textRadius" placeholder="0"><br/><br/>
+        <input type="button"   onclick="calculate()" value="Calculate">
+        <input type="button"  id="" value="Reset" onclick="reset()"><br/><br/>
+
+        <span id="spanResult">Area of Circle = 0</span>
+
+    </div>
+
+    <script type="text/javascript">
+    function calculate(){
+        var r = Number (document.getElementById("textRadius").value );
+        var areaofCircle = Math.PI * r * r;
+        document.getElementById("spanResult").innerHTML = "Area of Circle =  "+areaofCircle.toFixed(2);
+    }
+    function reset(){
+        document.getElementById("textRadius").value ="0";
+        document.getElementById("spanResult").innerHTML = "Area of Circle = 0 " ;
+    }
+    </script>
+</body>
+</html>
+

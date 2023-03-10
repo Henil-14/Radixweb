@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  </style>
+</head>
+
+<body>
+  <h1>Var:</h1>
+  <h1 id="var1">
+  </h1>
+  <h1 id="var2">
+  </h1>
+  <input type="button" onclick="var_1()" value="call Function"></button>
+  <input type="button" onclick="var_2()" value="value after function"></button>
+  <h1 id="var3">
+  </h1>
+  <h5>LET:</h5>
+  <h1 id="let1">
+  </h1>
+  <h1 id="let2">
+  </h1>
+  <input type="button" onclick="let_1()" value="call Function"></button>
+  <input type="button" onclick="let_2()" value="value after function"></button>
+  <h1 id="let3">
+  </h1>
+  <script>
+    var x = 0;
+    document.getElementById('var1').innerHTML = "Value declared outside function = " + x;
+    function var_1() {
+      x = 20;
+      document.getElementById('var2').innerHTML = "Value inside function = " + x;
+    }
+    function var_2() {
+      document.getElementById('var3').innerHTML = "Value after function = " + x;
+    }
+    let y = 0;
+    document.getElementById('let1').innerHTML = "Value declared outside function = " + y;
+    function let_1() {
+      let y = 30;
+      document.getElementById('let2').innerHTML = "Value inside function = " + y;
+    }
+    function let_2() {
+      document.getElementById('let3').innerHTML = "Value after function = " + y;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice4</title>
+</head>
+<body>
+    <p id="data"></p>
+    <input type="Button"  onclick="call()" value="submit">
+
+    <script>
+        function call(){
+            function Employee(firstname , address , designation ){
+                this.a = firstname;
+                this.b = address;
+                this.c = designation;
+            }
+
+            var data1 = new Employee("Henil", "Gujarat" , "Front-end");
+            var data2 = new Employee("Harshit" , "M.P" , "Back-end");
+
+            document.getElementById("data").innerHTML = " <strong>First Employee:</strong>" + "<br><br>" + "Name : " +data1.a +"<br>" +"Address : " + data1.b +"<br>"+ "Designation :" +data1.c +"<br><br>" +
+            " <strong> Second Employee:</strong>" + "<br> <br>" + "Name : "  +data2.a +"<br>" +"Address : "  + data2.b +"<br>"+ "Designation :"  +data2.c +"<br><br>"
+        }
+    </script>
+</body>
+</html>
