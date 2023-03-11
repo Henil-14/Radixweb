@@ -1,94 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      table,
-      td,
-      th {
-        border: 1px solid;
-      }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <form>
+    <h1 >Employee Form</h1>
+    <form onsubmit="formdata(),show(),reset()">
       <div>
-        <label><strong>Employee Id:</strong></label><br>
-        <input
-          class=""
-          placeholder="enter your id"
-          required
-          id="id"
-          type="number"
-        /><br><br>
+        <label>Employee Id</label>
+        <input  class=""  placeholder="enter your id"  required  id="id"  type="text" />
+        <p id="ids"></p>
+      </div>  <br />
+      <div>
+        <label>Employee Name</label>
+        <input  class=""  placeholder="Your Name Here"  required  id="name"  type="text"  onchange="nameCheck()"  />
+        <p id="names"></p>
       </div>
       <br />
       <div>
-        <label><strong>Employee Name:</strong></label><br>
-        <input
-          class=""
-          placeholder="Your Name Here"
-          required
-          id="name"
-          type="text"
-        /><br>
-      </div>
-      <br />
+        <label>Age</label>
+        <input  placeholder="Your Age Here"  required  id="age"  type="number"  onchange="ageCheck()"  />
+        <p id="ages"></p>
+      </div>  <br />
       <div>
-        <label><strong>Age:</strong></label><br>
-        <input
-          placeholder="Your Age Here"
-          required
-          id="age"
-          type="number"
-          min="0"
-          max="100"
-        />
-      </div>
-      <br />
-      <div>
-        <label><strong>Gender:</strong></label><br>
-        <input id="male" type="radio" required value="Male" name="Gender" />
+        <label>Gender</label>
+        <input id="gender" type="radio" checked value="Male" name="Gender" />
         <label>Male</label>
-        <input id="female" type="radio" required value="Female" name="Gender" />
+        <input id="gender" type="radio" required value="Female" name="Gender" />
         <label>Female</label>
-        <input id="other" type="radio" required value="Other" name="Gender" />
+        <input id="gender" type="radio" checked value="Male" name="Gender" />
         <label>Other</label>
+        <p id="genders"></p>
       </div>
       <br />
       <div>
-        <label><strong>Designation:</strong></label><br>
-        <input
-          placeholder="Your Designation Here"
-          required
-          id="designation"
-          type="text"
-        />
+        <label>Designation</label>
+        <input  placeholder="Your Designation Here"  required  id="designation"  type="text"  onchange="designationCheck()" />
+        <p id="designations"></p>
       </div>
       <br />
       <div>
-        <label><strong>Salary:</strong></label><br>
-        <input
-          placeholder="Your Salary Here"
-          required
-          id="salary"
-          type="number"
-        />
+        <label>Salary</label>
+        <input  placeholder="Your Salary Here"  required  id="salary"  type="number"  onchange="salaryCheck()"  />
+        <p id="salarys"></p>
       </div>
       <br />
       <div>
-        <label><strong>States:</strong></label><br>
+        states
         <select name="state" id="state">
           <option value="" selected="selected">Select state</option>
         </select>
         <br /><br />
 
-        <label><strong>City:</strong></label><br>
+        city
         <select name="city" id="city">
           <option value="" selected="selected">Please select City first</option>
         </select>
@@ -96,31 +61,25 @@
       </div>
       <br />
       <div>
-        <label><strong>Email:</strong></label><br>
-        <input placeholder="Your Email Here" required id="email" type="email" />
+        <label>Email</label>
+        <input  placeholder="Your Email Here"  required  id="email"  type="email"  onchange="emailCheck()"  />
+        <p id="emails"></p>
       </div>
       <br />
       <div>
-        <label><strong>Date of joining:</strong></label><br>
+        <label>Date of Joining</label>
         <input id="doj" type="date" />
       </div>
       <br />
       <div>
-        <label><strong>Contact Number:</strong></label><br>
-        <input placeholder="Your Ph.No Here" required id="cn" type="number" />
+        <label>Contact Number</label>
+
+        <input  placeholder="Your Ph.No Here"  required  id="mobile"  type="number"  onchange="mobileCheck()"  />
+        <p id="mobiles"></p>
       </div>
       <br />
       <div>
-        <input
-          type="button"
-          value="Submit"
-          onclick="formdata(),reset(),show()"
-        />
-        <input
-        type="button"
-        value="Reset"
-        onclick="reset()"
-      />
+        <input type="submit" value="Submit" />
       </div>
     </form>
     <table id="display"></table>
