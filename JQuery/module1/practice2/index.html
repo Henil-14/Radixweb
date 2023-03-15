@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+      
+    <title>Practice2</title>
+
+</head>
+
+<body>
+
+    <h1 id="lab"> Please select Your Technology :</h1><br><br>
+    <div  id="rad">
+        <input type="radio" name="technology"  value="PHP">PHP</input>
+        <input type="radio" name="technology"  value="ASP.NET">ASP.NET</input>
+        <input type="radio" name="technology"  value="ASP">ASP</input>
+        <input type="radio" name="technology"  value="JSP">JSP</input>
+        <input type="radio" name="technology"  value="PERT">PERT</input>
+        <input type="radio" name="technology"  value="Cold Fusion">Cold Fusion</input>
+        <input type="radio" name="technology"  value="Other">Other</input>
+    </div><br><br>
+
+    <div id="ans">
+     
+         <h3 class="checkedvalue"></h3> 
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#lab").css({ 'color': 'red' , 'justify-content' :'center' });
+            $('#ans').css({'text-align' : 'center'})
+
+            $('#rad').click(function(){
+                var radioValue = $("input[name = 'technology']:checked").val();
+                if(radioValue){
+                    $(".checkedvalue").text("You have selected : " + radioValue);
+                }
+            });
+
+        })
+    </script>
+</body>
+
+</html>

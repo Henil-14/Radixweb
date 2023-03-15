@@ -9,22 +9,22 @@
     <form onsubmit="formdata(),show(),reset()">
       <div>
         <label>Employee Id</label>
-        <input  class=""  placeholder="enter your id"  required  id="id"  type="text" />
+        <input  class=""  placeholder=" Please enter your id"  required  id="id"  type="text" />
         <p id="ids"></p>
       </div>  <br />
       <div>
         <label>Employee Name</label>
-        <input  class=""  placeholder="Your Name Here"  required  id="name"  type="text"  onchange="nameCheck()"  />
+        <input  class=""  placeholder="Please enter your Name Here"  required  id="name"  type="text"  onchange="nameCheck()"  />
         <p id="names"></p>
       </div>
       <br />
       <div>
         <label>Age</label>
-        <input  placeholder="Your Age Here"  required  id="age"  type="number"  onchange="ageCheck()"  />
+        <input  placeholder="Enter Your Age Here"  required  id="age"  type="number"  onchange="ageCheck()"  />
         <p id="ages"></p>
       </div>  <br />
       <div>
-        <label>Gender</label>
+        <label>Gender</label><br /><br />
         <input id="gender" type="radio" checked value="Male" name="Gender" />
         <label>Male</label>
         <input id="gender" type="radio" required value="Female" name="Gender" />
@@ -36,7 +36,7 @@
       <br />
       <div>
         <label>Designation</label>
-        <input  placeholder="Your Designation Here"  required  id="designation"  type="text"  onchange="designationCheck()" />
+        <input  placeholder="Enter Your Designation Here"  required  id="designation"  type="text"  onchange="designationCheck()" />
         <p id="designations"></p>
       </div>
       <br />
@@ -55,7 +55,7 @@
 
         city
         <select name="city" id="city">
-          <option value="" selected="selected">Please select City first</option>
+          <option value="" selected="selected">Please select State first</option>
         </select>
         <br /><br />
       </div>

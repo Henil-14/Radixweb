@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Cheese",
+      "price": 2.5,
+      "location": "Refrigerated foods"
+    },
+    {
+      "name": "Crisps",
+      "price": 3,
+      "location": "the snack isle"
+    },
+    {
+      "name": "pizza",
+      "price": 4,
+      "location": "Refrigerated foods"
+    },
+    {
+      "name": "Chocolate",
+      "price": 1.5,
+      "location": "the snack isle"
+    },
+    {
+      "name": "self-raising-flour",
+      "price": 1.5,
+      "location": "Home backing"
+    },
+    {
+      "name": "Ground-almonds",
+      "price": 3,
+      "location": "Home backing"
+    },
+    {
+        "name": "burger",
+        "price": 3,
+        "location": " foods"
+      },
+    {
+        "name": "Pasta",
+        "price": 8,
+        "location": "Refrigerated foods"
+      }
+  ]
+  

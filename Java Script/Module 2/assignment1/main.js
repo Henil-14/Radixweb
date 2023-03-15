@@ -95,14 +95,7 @@ window.onload = function () {
   };
 };
 
-// function idCheck() {
-//   var id = document.getElementById('id').value;
-//   if (id.length == "") {
-//     document.getElementById('ids').innerHTML = 'id no is not vaild';
-//   } else {
-//     document.getElementById('ids').innerHTML = '';
-//   }
-// }
+ 
 function nameCheck() {
   var name = document.getElementById('name').value;
   if (name.length < 1) {
