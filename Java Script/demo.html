@@ -1,13 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="demo.js"> </script>
+    <button onclick="getdata()">Get data</button>
+    <table id="tab"></table>
+    <script>
+        function getdata() {
+            var myHeaders = new Headers();
+            myHeaders.append("Authorization", "Bearer 1981bc7bfe89a36b0cca313e29ac4284c099e4718731f010c851a473c1367b1c");
+
+            var requestOptions = {
+                method: 'GET',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+
+            fetch("https://gorest.co.in/public/v2/users", requestOptions)
+                .then(response => response.text())
+                .then(async function (response) {await call(response)} )
+                .catch(error => console.log('error', error));
+            function call(response) {
+                var obj = JSON.parse(response)
+                var tab = []
+                tab = tab + `<tr> <th>id</th> <th>name</th> <th>email</th> <th>gender</th> <th>status</th> </tr>`
+                for (var i = 0; i < obj.length; i++) {
+                    tab = tab + `<tr> <td>${obj[i].id}</td> <td>${obj[i].name}</td> <td>${obj[i].email}</td> <td>${obj[i].gender}</td> <td>${obj[i].status}</td>
+                        <td><button onclick="deleteData(${obj[i].id})">Delete</button></td></tr>`
+                } console.log(response)
+                document.getElementById("tab").innerHTML = tab;
+            }
+        }
+
+        function deleteData(id) {
+            var myHeaders = new Headers();
+            myHeaders.append("Authorization", "Bearer 1981bc7bfe89a36b0cca313e29ac4284c099e4718731f010c851a473c1367b1c");
+
+            var raw = "";
+
+            var requestOptions = {
+                method: 'DELETE',
+                headers: myHeaders,
+                body: raw,
+                redirect: 'follow'
+            };
+            
+            fetch("https://gorest.co.in/public/v2/users/"+id, requestOptions)
+            .then(response => response.text())
+            .then(async result => await console.log (result))
+            .catch(error => console.log('error', error));
+            console.log(id)
+              
+        }
+
+
+    </script>
 </body>
+
 </html>
