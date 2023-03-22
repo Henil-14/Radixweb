@@ -1,3 +1,3 @@
 
-  alert("this");
-
+let a = "hello";
+console.warn(a)
