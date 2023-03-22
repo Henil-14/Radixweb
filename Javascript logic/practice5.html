@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Find positive and negative numbers :</h1>
+    <p id="p1"> </p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    
+
+   <script>
+
+    var arr = ["19" ,"71" ,"41" ,"111" ,"12" ,"-2" ,"-31" ,"0" ,"-21" ,"-11" ,"10"  ]
+
+    var positive = negative = 0
+
+    for ( i=0;i < arr.length ; i++){
+        if(arr[i]<0)
+        negative++;
+        else
+        positive++;
+    }
+
+    document.getElementById("p1").innerHTML = `input value is : ${arr}`
+    document.getElementById("p2").innerHTML =`positive numbers are : ${positive}`
+    document.getElementById("p3").innerHTML =`negative numbers are : ${negative}`
+   
+    console.log(`${positive}`)
+    console.log(`${negative}`)
+
+</script>
+</body>
+</html>

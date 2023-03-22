@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <label for="">Enter first number:</label><br>
+    <input type="number" name="" id="num1"><br><br>
+
+    <label for="">Enter second number:</label><br>
+    <input type="number" name="" id="num2"><br><br>
+
+    <button onclick="calculate()">Submit</button> -->
+    <p id="demo"></p>
+
+    <script>
+        function calculate(a,b) {
+            // var a = document.getElementById("num1").value;
+            // var b = document.getElementById("num2").value;
+            // var c
+
+            if (a < b) {
+               return  a / b
+            }
+            else {
+                return   a * b
+            }
+           // document.getElementById("ans").innerHTML = `The answere is : ${c}`;
+        }
+        document.getElementById("demo").innerHTML = calculate(7,3);
+    </script>
+</body>
+
+</html>

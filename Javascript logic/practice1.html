@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1</title>
+</head>
+
+<body>
+
+    <label for="">Enter string</label><br>
+    <input type="text" name=""  placeholder = "Enter string" id="demo"><br><br>
+    <button onclick="rev()" >Submit</button>
+    <h1 id="demo"></h1>
+    <h1 id="show"></h1>
+    <script>
+
+        function rev() {
+            var str = document.getElementById("demo").value;
+            var s = str.split(" ").reverse().join(" ")
+           document.getElementById("show").innerHTML ="Reverse string is : "+s
+           
+        }
+
+        
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">Enter string:</label><br>
+    <input type="text" name="" id="inp"><br><br>
+    <button onclick="reverse()">Submit</button>
+    <script>
+
+        function reverse (){
+
+        
+        const str = document.getElementById("inp").value;
+        const s = str.split("").reverse().join("");
+
+        
+        const char = (string) => {
+            let s = [];
+            for (let i = 0; i < string.length; i++) {
+                if (string[i] === string[i].toUpperCase()) {
+                    s.push(string[i].toLowerCase())
+                }
+                else
+                    s.push(string[i].toUpperCase())
+            }
+            return s.join("");
+
+        };
+
+        console.log(s)
+
+    }
+
+    </script>
+</body>
+
+</html>
