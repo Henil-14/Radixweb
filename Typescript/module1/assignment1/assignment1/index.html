@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <title>Vite + TS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
   </head>
   <body>
 
-    
-    <input type="number" id="search">
+    <div class="items-center">
+    <div class="border-2 ">
+      <input type="number" id="search">
     <button  id="sear">find</button><br><br>
     
     <label for=""> ID</label><br>
@@ -31,11 +34,27 @@
     <button  id="get">Get Data</button>
     <button  id="postData">Post</button>
     <button  id="del">Delete</button><br><br>
+  </div>
 
-
+  <div>
    <table id = "tab"></table>
-   
+  </div>
+</div>
    
     <script type="module" src="/src/main.ts"></script>
   </body>
+  <style type="text/tailwindcss">
+    @layer utilities {
+     table ,td , th{
+      @apply border  items-center
+     }
+    button {
+      @apply border p-2 bg-black text-white rounded-lg
+    }
+
+    #eid ,#search , #fname ,#lname ,#address , #salary{
+      @apply border-2
+    }
+    }
+  </style>
 </html>
