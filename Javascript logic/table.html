@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="tableget()">Get Data</button>
+    <button onclick="post()">Post Data</button>
+
+    <input type="text" name="asdg" id="iii">
+    <table>
+        <thead>
+
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+    <script>
+
+        function tableget(){
+   
+        var settings = {
+            "url": "https://gorest.co.in/public/v2/users",
+            "method": "GET",
+            "timeout": 0,
+            "headers": {
+                "Authorization": "Bearer 1981bc7bfe89a36b0cca313e29ac4284c099e4718731f010c851a473c1367b1c"
+            },
+        };
+
+        $.ajax(settings).done(function (response) {
+            getData(response);
+        });
+    }
+       var data= $("<table/>").attr("id" , "div1").appendTo("body")
+
+function getData(response){
+
+    $("#div1").html(" ")
+    $("#iii").val(response[0].name)
+    for(var d of response){
+        data.append($(`<tr/>`).append($('<td>').text(d.email),
+            $('<td>').text(d.name),
+            $('<td>').text(d.gender)))
+    }
+}
+
+function post(){
+    var settings = {
+  "url": "https://gorest.co.in/public/v2/users",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "Bearer 1981bc7bfe89a36b0cca313e29ac4284c099e4718731f010c851a473c1367b1c",
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "name": "Dwaipayana Mehra",
+    "email": "dwaipayerthra@powlowski.name",
+    "gender": "female",
+    "status": "active"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+}
+    </script>
+</body>
+
+</html>

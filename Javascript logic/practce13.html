@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="" id="one">
+    <input type="text" name="" id="two">
+    <input type="text" name="" id="three">
+    <button onclick="check()">Submit</button>
+
+    <p id = "show"></p>
+   
+   <script>
+
+    function check(){
+        var a = document.getElementById("one").value
+        var b = document.getElementById("two").value
+        var c = document.getElementById("three").value
+
+         arr = Math.max(a,b,c);
+         document.getElementById("show").innerHTML = arr;
+    }
+     
+  
+       
+    </script>
+</body>
+</html>
