@@ -13,6 +13,7 @@
     <label for="">Enter string:</label><br>
     <input type="text" name="" id="inp"><br><br>
     <button onclick="reverse()">Submit</button>
+    <p id = "ans"></p>
     <script>
 
         function reverse (){
@@ -34,7 +35,7 @@
             return s.join("");
 
         };
-
+        document.getElementById("ans").innerHTML = s
         console.log(s)
 
     }

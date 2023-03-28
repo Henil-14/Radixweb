@@ -29,7 +29,7 @@ interface userType{
 //aftrt creating above interface assign that interface to the user data
 // interface is a structure it act as our application
 
-//interface: class and object ne define krb=va mate je template banava ma ab=ve ene interface khrva ma ave che
+//interface: class and object ne define krva mate je template banava ma ab=ve ene interface khrva ma ave che
 
 //syntax:
         // interface interfacename{

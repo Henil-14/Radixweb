@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+  </head>
+
+  <body>
+
+    
+    <script>
+      var container = $('<div/>').addClass('pt-10 h-screen text-md font-serif');
+      var form = $('<form/>').addClass('w-64 lg:w-1/4 text-white text-lg p-5 pt-0 mx-auto border rounded-xl' );
+
+      var dtit = $('<div/>').addClass('flex text-xl justify-center');
+      $('<label/>').attr({ for: 'titles', id: 'title' }).append('Employee Form')
+        .appendTo(dtit);
+      // ===================================name================================
+      var dname = $('<div/>');
+
+      $('<label/>')
+        .attr('for', 'name')
+        .append('Name : ')
+        .appendTo(dname)
+        .after(
+          $('<input type="text"/>')
+            .attr({ Placeholder: ' Please Enter Yout Name', id: 'name' })
+            .addClass('w-full border-b-2 text-black border-black rounded-lg')
+        );
+      // ===================================email================================
+
+      var dmail = $('<div/>');
+
+      $('<label/>')
+        .attr('for', 'email')
+        .append('Email : ')
+        .appendTo(dmail)
+        .after(
+          $('<input type="email"/>')
+            .attr({ Placeholder: ' Please Enter Yout Email', id: 'email' })
+            .addClass('w-full border-b-2 text-black border-black rounded-lg')
+        );
+      // =====================================gender==============================
+
+      var dgen = $('<div/>');
+
+      $('<label/>').attr('for', 'gender').append('Gender : ').appendTo(dgen);
+
+      var optg = $('<div/>').appendTo(dgen).addClass('flex justify-evenly');
+      //==================================male================================
+      $('<input type="radio"/>')
+        .attr({ name: 'gender', id: 'male', value: 'male' })
+        .appendTo(optg)
+        .after($('<label/>').attr('for', 'male').append('Male'))
+        .appendTo(optg);
+      //==================================female==============================
+      $('<input type="radio"/>')
+        .attr({ name: 'gender', id: 'female', value: 'female' })
+        .appendTo(optg)
+        .after($('<label/>').attr('for', 'female').append('Female'))
+        .appendTo(optg);
+
+      // ==================================status=================================
+
+      var dsta = $('<div/>');
+
+      $('<label/>').attr('for', 'status').append('Status : ').appendTo(dsta);
+
+      var opts = $('<div/>').appendTo(dsta).addClass('flex justify-evenly');
+      //==================================active==============================
+      $('<input type="radio"/>')
+        .attr({ name: 'status', id: 'active', value: 'active' })
+        .appendTo(opts)
+        .after($('<label/>').attr('for', 'active').append('Active'))
+        .appendTo(opts);
+      //==================================inactive============================
+      $('<input type="radio"/>')
+        .attr({ name: 'status', id: 'inactive', value: 'inactive' })
+        .appendTo(opts)
+        .after($('<label/>').attr('for', 'inactive').append('Inactive'))
+        .appendTo(opts);
+
+      // =================================buttons==================================
+
+      var dbtn = $('<div/>').addClass('flex justify-evenly gap-1 mt-2');
+      //====================================get===================================
+      $('<input type="button">')
+        .attr({ value: 'GET DATA', id: 'getd' })
+        .addClass('cursor-pointer bg-green-500 p-2 py-1 rounded-xl')
+        .appendTo(dbtn);
+      //====================================post==================================
+      $('<input type="button">')
+        .attr({ value: 'POST DATA', id: 'postd' })
+        .addClass('cursor-pointer bg-blue-500 p-2 py-1 rounded-xl')
+        .appendTo(dbtn);
+
+      var dupbtn = $('<div/>').addClass('flex mt-2');
+      //====================================update================================
+      $('<input type="button">')
+        .attr({ value: 'UPDATE', id: 'upd' })
+        .addClass(' cursor-pointer mx-auto bg-sky-500 p-2 py-1 rounded-xl')
+        .appendTo(dupbtn);
+
+      // ==================================formover================================
+
+      form.append(dtit, dname, dmail, dgen, dsta, dbtn, dupbtn);
+      form.appendTo(container);
+      $('body')
+        .addClass(
+          "bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRxDITW9k0p4Ogq-AplRd8C-yiL4zUd0ddNqnTujCBdbba0U1ANRe2Kp3MYsaOuBNIFh8&usqp=CAU')] "
+        )
+        .append(container);
+
+      //=======================================divforcard=======================================
+      var ddiv = $('<div/>')
+        .addClass('display flex flex-wrap justify-evenly gap-2 mt-4')
+        .appendTo(container);
+
+      function getdata() {
+        var settings = {
+          url: 'https://gorest.co.in/public/v2/users',
+          method: 'GET',
+          timeout: 0,
+          headers: {
+            Authorization:
+              'Bearer 703d4ca7e4968de3d7a02dda191da2b67e5874771d31304587b8fc33df5b5cfc',
+          },
+        };
+
+        $.ajax(settings).done(function (response) {
+          printdata(response);
+        });
+      }
+
+      function printdata(filter) {
+        ddiv.html('');
+        for (var d of filter) {
+          var link, accent, color, bgcolor;
+          if (d.gender === 'female') {
+            link =
+              'https://th.bing.com/th/id/OIP.nAY1RmMdynwlIxthpQ2FMQHaEo?w=291&h=181&c=7&r=0&o=5&pid=1.7';
+            accent = 'Ms. ';
+          } else if (d.gender === 'male') {
+            link =
+              'https://th.bing.com/th/id/OIP.NSxONYhZ6QodogauCLQ2ewHaKg?pid=ImgDet&w=171&h=242&c=7';
+            accent = 'Mr. ';
+          }
+          if (d.status === 'active') {
+            color = ['text-green-600', 'bg-green-500'];
+          } else if (d.status === 'inactive') {
+            color = ['text-red-500', 'bg-red-500'];
+          }
+
+          var empid = $('<h1/>').addClass(
+            `w-4 p-2 rounded-full ${color[1]} border-2 border-black`
+          );
+
+          var idiv = $('<div/>').addClass(
+            'w-20 h-20 mx-auto overflow-hidden rounded-full'
+          );
+          var imag = $('<img/>')
+            .attr('src', `${link}`)
+            .addClass(
+              'w-20 h-20 object-cover hover:scale-125 duration-500 mx-auto rounded-full'
+            )
+            .appendTo(idiv);
+
+          var id = $('<h2/>')
+            .addClass('text-center')
+            .text('Id : ' + d.id);
+
+          var name = $('<h3/>')
+            .addClass('text-center font-bold text-lg')
+            .text(accent + d.name);
+
+          var email = $('<h4/>')
+            .text('Email : ' + d.email)
+            .addClass('flex flex-wrap');
+
+          var sta = $('<h6/>').text('Status : ');
+
+          var spa = $('<span/>')
+            .addClass(`font-bold ${color[0]}`)
+            .text(d.status)
+            .appendTo(sta);
+
+          var gen = $('<h5/>').text('Gender : ' + d.gender);
+
+          var ldiv = $('<div/>').addClass('flex justify-evenly');
+
+          var uubtn = $('<button/>')
+            .text('UPDATE')
+            .attr({ id: 'put', onclick: `putdata(${d.id})` })
+            .addClass('bg-yellow-300 p-2 rounded-xl hover:scale-105')
+            .appendTo(ldiv);
+          var ddbtn = $('<button/>')
+            .text('DELETE')
+            .attr({ id: 'deleted', onclick: `del(${d.id})` })
+            .addClass('bg-red-600 p-2 rounded-xl hover:scale-105')
+            .appendTo(ldiv);
+
+          cdiv = $('<div/>')
+            .addClass(
+              "bg-[url('https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252__340.jpg')] bg-no-repeat h-full w-full m-1 rounded-xl p-1 w-72 hover:scale-105 shadow-xl hover:shadow-2xl"
+            )
+            .appendTo(ddiv);
+
+          cdiv.append(empid, idiv, id, name, email, gen, sta, ldiv);
+        }
+      }
+
+      function postdata() {
+        var settings = {
+          url: 'https://gorest.co.in/public/v2/users',
+          method: 'POST',
+          timeout: 0,
+          headers: {
+            Authorization:
+              'Bearer 703d4ca7e4968de3d7a02dda191da2b67e5874771d31304587b8fc33df5b5cfc',
+            'Content-Type': 'application/json',
+          },
+          data: JSON.stringify({
+            name: $('#name').val(),
+            email: $('#email').val(),
+            gender: $('input[name=gender]:checked').val(),
+            status: $('input[name=status]:checked').val(),
+          }),
+        };
+        $.ajax(settings).done(function (data) {
+          console.log(data);
+        });
+
+        alert('Data Successfully Added!');
+
+        getdata();
+
+        clear();
+      }
+
+      function clear() {
+        $('#name').val('');
+        $('#email').val('');
+        $('input[type=radio]').prop('checked', false);
+      }
+
+      function putdata(id) {
+        var settings = {
+          url: 'https://gorest.co.in/public/v2/users/' + id,
+          method: 'GET',
+          timeout: 0,
+          headers: {
+            Authorization:
+              'Bearer 703d4ca7e4968de3d7a02dda191da2b67e5874771d31304587b8fc33df5b5cfc',
+          },
+        };
+
+        $.ajax(settings).done(function (response) {
+          fillform(response);
+        });
+
+        function fillform(d) {
+          $('#name').val(d.name), $('#email').val(d.email);
+          if (d.gender == 'male') {
+            $('input[id=male]').prop('checked', true);
+          } else {
+            $('input[id=female]').prop('checked', true);
+          }
+          if (d.status == 'active') {
+            $('input[id=active]').prop('checked', true);
+          } else {
+            $('input[id=inactive]').prop('checked', true);
+          }
+          $('#title').val(d.id);
+        }
+      }
+
+      function patchdata(id) {
+        var settings = {
+          url: 'https://gorest.co.in/public/v2/users/' + id,
+          method: 'PATCH',
+          timeout: 0,
+          headers: {
+            Authorization:
+              'Bearer 703d4ca7e4968de3d7a02dda191da2b67e5874771d31304587b8fc33df5b5cfc',
+            'Content-Type': 'application/json',
+          },
+          data: JSON.stringify({
+            name: $('#name').val(),
+            email: $('#email').val(),
+            gender: $('input[name=gender]:checked').val(),
+            status: $('input[name=status]:checked').val(),
+          }),
+        };
+        $.ajax(settings).done(function (data) {
+          console.log(data);
+        });
+        alert('Data Successfully Updated!');
+
+        clear();
+
+        getdata();
+      }
+
+      function del(id) {
+        var settings = {
+          url: 'https://gorest.co.in/public/v2/users/' + id,
+          method: 'DELETE',
+          timeout: 0,
+          headers: {
+            Authorization:
+              'Bearer 703d4ca7e4968de3d7a02dda191da2b67e5874771d31304587b8fc33df5b5cfc',
+          },
+        };
+        $.ajax(settings).done(function (data) {
+          console.log(data);
+        });
+        alert('Details Deleted');
+        getdata();
+      }
+
+      $('#getd').click(function () {
+        getdata();
+      });
+      $('#postd').click(function () {
+        postdata();
+      });
+      $('#upd').click(function () {
+        patchdata($('#title').val());
+      });
+    </script>
+  </body>
+</html>
