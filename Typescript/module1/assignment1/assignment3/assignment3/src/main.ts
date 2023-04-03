@@ -40,10 +40,7 @@ class Employee implements IEmparray1{
   getsalary():number{
     return this.salary;
   }
-  // getpf(): number{
-  //   var c : number =  (this.salary*12)/100 ;
-  // return c;
-  // }
+ 
 }
 
 
@@ -107,7 +104,7 @@ var array1 = [
 
 for(var i = 0;i<array1.length;i++)
 {
-  // var pf = [array1[i].salary*12/100]
+  
   var pf = (array1[i].salary)*12/100
 
  var emp = new Employee(array1[i].id, array1[i].fname, array1[i].lname, array1[i].address, array1[i].salary , pf);
